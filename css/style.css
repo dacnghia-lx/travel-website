@@ -130,7 +130,7 @@ header {
 
 /*hero*/
 .banner {
-    background: url('img/BGImage.png') no-repeat center center;
+    background: url('../img/BGImage.png') no-repeat center center;
     background-size: cover;
     height: 100vh;
     position: relative;
