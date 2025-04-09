@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 0px 5%;
     background-color: #ffffff;
     position: relative;
 }
@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 10px;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .nav_links {
@@ -114,12 +114,6 @@ header {
 .sub_menu_2 {
     left: 100%;
     top: 0;
-}
-
-/* Thêm mũi tên cho các mục có submenu */
-.nav_links > li:first-child > a:after {
-    content: " ▾";
-    font-size: 12px;
 }
 
 .sub_menu li > a:after {
@@ -278,9 +272,10 @@ header {
 }
 
 .about-content{
-    max-width: 600px;
-    margin-right: 20px;
+    max-width: 50%;
     font-weight: 500;
+    text-align: left;
+    flex: 1;
 }
 
 .about-content h2 {
@@ -327,58 +322,16 @@ header {
 }
 
 .about-image {
-    position: relative;
-    width: 50%;
-    max-width: 500px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 .about-image img {
-    position: absolute;
-    max-width: 60%;
-    height: 350px;
-    height: auto;
-    object-fit: cover;
+    width: 100%;
+    max-width: 80%;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.about-image img:nth-child(1) {
-    top: -200px;
-    left: 0px;
-    z-index: 3;
-}
-
-.about-image img:nth-child(2) {
-    top: -120px;
-    left: -100px;
-    z-index: 4;
-}
-
-.about-image img:nth-child(3) {
-    top: -20px;
-    left: -150px;
-    z-index: 2;
-}
-
-.about-image img:nth-child(4) {
-    top: 50px;
-    left: 80px;
-    z-index: 1;
-}
-
-.about-image:hover img:nth-child(1) {
-    transform: translateY(-10px) rotate(-8deg);
-}
-
-.about-image:hover img:nth-child(2) {
-    transform: translateY(-5px) rotate(10deg);
-}
-
-.about-image:hover img:nth-child(3) {
-    transform: translateY(-8px) rotate(-10deg);
-}
-
-.about-image:hover img:nth-child(4) {
-    transform: translateY(-12px) rotate(8deg);
 }
 
 /* Destinations Section */
@@ -537,7 +490,7 @@ header {
 }
 
 .news-info h2 {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #000;
     margin-bottom: 10px;
 }
