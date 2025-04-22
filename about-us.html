@@ -179,46 +179,65 @@
     <h2>Ý kiến của khách hàng về chuyến đi</h2>
   </div>
   <div class="review-carousel">
-    <button class="carousel-btn"><i class="fa-solid fa-chevron-left"></i></button>
-    <div class="review-content">
-      <div class="review-item active">
-        <p>“Dịch vụ rất chuyên nghiệp. Rất đáng để giới thiệu. Tuyệt vời! Chỉ với thời gian ngắn ngủi nhưng tôi đã được chiêm ngưỡng những bãi biển đẹp nhất mà tôi từng thấy.”</p>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+      <div class="review-slide active">
+        <div class="review-content">
+          <p>"Dịch vụ rất chuyên nghiệp. Rất đáng để giới thiệu. Tuyệt vời! Chỉ với thời gian ngắn ngủi nhưng tôi đã được chiêm ngưỡng những bãi biển đẹp nhất mà tôi từng thấy."</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Sofia Joly</h3>
+          <p class="location">London, Anh</p>
         </div>
-        <h3>Tung Sahur</h3>
-        <p class="location">London, Anh</p>
       </div>
-      <div class="review-item">
-        <p>“Hành trình tuyệt vời, hướng dẫn viên nhiệt tình và chuyên nghiệp. Tôi đã có những trải nghiệm đáng nhớ và học được nhiều điều mới mẻ.”</p>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+      
+      <div class="review-slide">
+        <div class="review-content">
+          <p>"Hành trình tuyệt vời, hướng dẫn viên nhiệt tình và chuyên nghiệp. Tôi đã có những trải nghiệm đáng nhớ và học được nhiều điều mới mẻ."</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Nguyễn Văn A</h3>
+          <p class="location">Hà Nội, Việt Nam</p>
         </div>
-        <h3>Nguyễn Văn A</h3>
-        <p class="location">Hà Nội, Việt Nam</p>
       </div>
-      <div class="review-item">
-        <p>“Chuyến đi vượt ngoài mong đợi! Đội ngũ tổ chức chu đáo, mọi thứ đều được chuẩn bị kỹ lưỡng. Tôi sẽ quay lại vào kỳ nghỉ tới!”</p>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+
+      <div class="review-slide">
+        <div class="review-content">
+          <p>"Dịch vụ rất chuyên nghiệp. Rất đáng để giới thiệu. Tuyệt vời! Chỉ với thời gian ngắn ngủi nhưng tôi đã được chiêm ngưỡng những bãi biển đẹp nhất mà tôi từng thấy."</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>Tung Sahur</h3>
+          <p class="location">Venice, Italy</p>
         </div>
-        <h3>Emma Brown</h3>
-        <p class="location">Sydney, Úc</p>
       </div>
+    
+    <!-- Navigation Dots -->
+    <div class="review-dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <button class="carousel-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    
+    <!-- Navigation Arrows -->
+    <button class="review-prev" onclick="changeSlide(-1)">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="review-next" onclick="changeSlide(1)">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
   </div>
 </section>
 
@@ -279,6 +298,7 @@
       </div>
     </div>
   </footer>
+  <script src="about-us.js"></script>
 </body>
 
 </html>
