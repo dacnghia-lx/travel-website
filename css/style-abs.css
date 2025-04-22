@@ -556,10 +556,6 @@ header {
   overflow: hidden;
 }
 
-.review-container {
-  position: relative;
-  width: 100%;
-}
 
 .review-slide {
   display: none;
