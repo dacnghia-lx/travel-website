@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon//favicon-16x16.png">
+    <link rel="manifest" href="./icon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header>
+        <!--Navigation bar-->
+        <div>
+            <img class="logo" src="img/logo.svg" alt="logo">
+        </div>
+        <nav id="navbar">
+            <ul class = "nav_links">
+                <li><a href="#">Điểm đến</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#">Du lịch trong nước</a>
+                                <div class="sub_menu_2">
+                                    <ul>
+                                        <li><a href="#">Miền Bắc</a></li>
+                                        <li><a href="#">Miền Trung</a></li>
+                                        <li><a href="#">Miền Nam</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Du lịch nước ngoài</a>
+                                <div class="sub_menu_2">
+                                    <ul>
+                                        <li><a href="#">Châu Á</a></li>
+                                        <li><a href="#">Châu Âu</a></li>
+                                        <li><a href="#">Châu Mỹ</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Tin tức</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="checkout-container">
+        <div class="contact-info">
+            <h2>Điền thông tin liên hệ</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Họ và tên *</label>
+                    <input type="text" id="name" placeholder="Nhập họ và tên" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Nhập email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại *</label>
+                    <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+                <h3>Hãy cho chúng tôi biết Quý khách cần gì?</h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Hút thuốc</label>
+                    <label><input type="checkbox"> Phòng tầng cao</label>
+                    <label><input type="checkbox"> Trẻ em hiếu động</label>
+                    <label><input type="checkbox"> Ăn chay</label>
+                    <label><input type="checkbox"> Có người khuyết tật</label>
+                    <label><input type="checkbox"> Phụ nữ có thai</label>
+                </div>
+                <a href="#" class="special-request">+ Thêm yêu cầu đặc biệt</a>
+                <textarea name="" id=""></textarea>
+                <button type="submit" class="continue-btn">Tiếp tục</button>
+            </form>
+        </div>
+        <div class="tour-info">
+            <h2>Thông tin đặt tour</h2>
+            <div class="tour-summary">
+                <img src="img/info//des_banner/sapa.jpg" alt="Tour Sapa">
+                <div>
+                    <h3 id="tour-name">Tên tour</h3>
+                    <p><strong>Mã tour:</strong> <span id="tour-code"></span></p>
+                    <p>Ngày khởi hành: <span id="checkout-date"></span></p>
+                    <p>Số khách: <span id="checkout-guests"></span></p>
+                </div>
+            </div>
+            <div class="total-price">
+                <p><strong>Tổng tiền:</strong> <span id="checkout-price"></span></p>
+                <p>Gọi <strong>028 3827 0404</strong> để được hỗ trợ 24/7</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        // filepath: d:\vivu_travel\checkout.html
+        window.addEventListener('DOMContentLoaded', function() {
+            const tourName = localStorage.getItem('tour_name');
+            const tourCode = localStorage.getItem('tour_code');
+            const date = localStorage.getItem('tour_departure_date');
+            const guests = localStorage.getItem('tour_guests');
+            const price = localStorage.getItem('tour_total_price');
+
+
+            if (tourName) document.getElementById('tour-name').textContent = tourName;
+            if (tourCode) document.getElementById('tour-code').textContent = tourCode;
+            if (date) document.getElementById('checkout-date').textContent = date;
+            if (guests) document.getElementById('checkout-guests').textContent = guests;
+            if (price) document.getElementById('checkout-price').textContent = price;
+        });
+        </script>
+    <footer class="footer">
+        <footer class="footer">
+            <div class="footer-section">
+              <h4>Liên hệ</h4>
+              <p>235 Hoàng Quốc Việt, Cổ Nhuế,<br>Bắc Từ Liêm, Hà Nội</p>
+              <p>Từ 7:00 - 17:30 hằng ngày</p>
+              <p>Từ 7:00 - 15:00 Chủ Nhật</p>
+              <hr style="width: 80%; margin: 10px 0;">
+              <p>Hỗ trợ khách hàng qua hotline 24/7</p>
+              <p>(+84) 034 958 0476</p>
+              <p>(+84) 034 958 0416</p>
+              <div class="social-icons">
+                <img src="img/footer/social/face.svg"/>
+                <img src="img/footer/social/ins.svg"/>
+                <img src="img/footer/social/messenger.svg"/>
+                <img src="img/footer/social/tiktok.svg"/>
+              </div>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Thông tin</h4>
+              <ul>
+                <li>Giới thiệu</li>
+                <li>Tin tức</li>
+                <li>Liên hệ</li>
+              </ul>
+            </div>
+          
+            <div class="footer-section">
+              <h4>Dịch vụ</h4>
+              <strong>Du lịch trong nước</strong>
+              <ul>
+                <li>Miền Bắc</li>
+                <li>Miền Nam</li>
+                <li>Miền Trung</li>
+              </ul>
+              <strong>Du lịch nước ngoài</strong>
+              <ul>
+                <li>Châu Âu</li>
+                <li>Châu Á</li>
+                <li>Châu Mỹ</li>
+              </ul>
+            </div>
+          
+            <div class="footer-section">
+              <h4>Đăng ký để nhận tin từ chúng tôi:</h4>
+              <div class="subscribe-box">
+                <input type="email" placeholder="Your email" />
+                <img src="https://img.icons8.com/ios-filled/50/000000/telegram-app.png" />
+              </div>
+              <h4>Chấp nhận thanh toán</h4>
+              <div class="payment-icons">
+                <img src="img/footer/icon.png"/>
+              </div>
+            </div>
+          </footer>
+    </footer>
+</body>
+</html>
