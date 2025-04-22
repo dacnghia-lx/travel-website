@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: #3674B5;
+    --sub--color: #73B2D3;
+    --text-color: #000000;
+    --background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    padding: 0;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li {
+    position: relative;
+    padding: 0 20px;
+}
+
+.nav_links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 10px 20px;
+}
+
+.nav_links a:hover {
+    color: #0088a9;
+}
+
+/* Style cho submenu */
+.sub_menu, .sub_menu_2 {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 220px;
+    opacity: 0;
+    display: none;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    left: 0;
+    top: 100%;
+    padding: 8px 0;
+}
+
+/* Hiển thị submenu khi hover */
+.nav_links li:hover > .sub_menu,
+.sub_menu li:hover > .sub_menu_2 {
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+}
+
+.sub_menu ul, .sub_menu_2 ul {
+    list-style: none;
+}
+
+.sub_menu li, .sub_menu_2 li {
+    position: relative;
+    padding: 0;
+}
+
+.sub_menu a, .sub_menu_2 a {
+    padding: 12px 20px;
+    font-size: 14px;
+    display: block;
+    border-left: 3px solid transparent;
+}
+
+.sub_menu a:hover, .sub_menu_2 a:hover {
+    background-color: #b8bccc;
+    border-left: 3px solid #0088a9;
+}
+
+/* Vị trí cho submenu cấp 2 */
+.sub_menu_2 {
+    left: 100%;
+    top: 0;
+}
+
+.sub_menu li > a:after {
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Section */
+.contact-info {
+    width: 60%;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+}
+
+.special-request {
+    display: block;
+    color: #007BFF;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.special-request:hover {
+    text-decoration: underline;
+}
+
+.continue-btn {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.continue-btn:hover {
+    background-color: #E64A19;
+}
+
+/* Tour Info Section */
+.tour-info {
+    width: 35%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.tour-info h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tour-summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tour-summary img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.tour-summary h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tour-summary p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.total-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.total-price span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF5722;
+}
+
+.footer {
+    background-color: #a3d5f7;
+    color: #000;
+    padding: 40px 10%; /* Đồng bộ padding với các phần khác */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px 20px 0px; /* Giảm margin bên trái và thêm margin dưới */
+}
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+.footer-section p, .footer-section li {
+    margin: 4px 0;
+    font-size: 14px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.social-icons img, .payment-icons img {
+    width: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.subscribe-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.subscribe-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+.subscribe-box img {
+    width: 20px;
+    cursor: pointer;
+}
+.footer-container {
+    background-color: #0a2c52;
+    height: 40px;
+    width: 100%; /* Đảm bảo chiều rộng 100% */
+    margin-top: -50px; /* Thêm khoảng cách giữa footer và nội dung */
+}
+
+.payment-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.payment-icons img{
+    margin: 0 5px;
+    height: 100px;
+    width: 200px;
+}

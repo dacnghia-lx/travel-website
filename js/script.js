@@ -1,3 +1,11 @@
+function homepage() {
+var home = document.querySelector('.logo');
+    home.addEventListener('click', function() {
+    window.location.href = '/index.html';
+    });
+}
+homepage();
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
