@@ -35,10 +35,10 @@
         </div>
         <nav id="navbar">
             <ul class = "nav_links">
-                <li><a href="#">Điểm đến</a>
+                <li><a href="/destination.html">Điểm đến</a>
                     <div class="sub_menu">
                         <ul>
-                            <li><a href="#">Du lịch trong nước</a>
+                            <li><a href="/des-domestic.html">Du lịch trong nước</a>
                                 <div class="sub_menu_2">
                                     <ul>
                                         <li><a href="/mienbac.html">Miền Bắc</a></li>
@@ -47,7 +47,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#">Du lịch nước ngoài</a>
+                            <li><a href="/des-oversea.html">Du lịch nước ngoài</a>
                                 <div class="sub_menu_2">
                                     <ul>
                                         <li><a href="/asian.html">Châu Á</a></li>
@@ -106,7 +106,7 @@
         <!-- booking box cho Hà Giang - Lũng Cú - Đồng Văn -->
 <div class="booking-box">
     <p class="original-price">4,990,000 VND/người</p>
-    <p class="discounted-price">3,990,000 VND/người</p>
+    <p class="discounted-price" data-value="3990000">3,990,000 VND/người</p>
     <form>
         <label for="departure-date">Khởi hành</label>
         <input type="date" id="departure-date" value="2025-04-24">
@@ -134,49 +134,6 @@
         <p style="color: black;"><strong>Tổng tiền:</strong> <span id="total-price">3,990,000 VND</span></p>
         <button id="book" type="submit" class="book-tour">Đặt Tour</button>
     </form>
-    <script>
-        // Giá tiền cho 1 khách
-        const pricePerGuest = 3990000;
-
-        // Lấy các phần tử cần thiết
-        const guestsSelect = document.getElementById('guests');
-        const totalPriceElement = document.getElementById('total-price');
-
-        // Hàm tính tổng tiền
-        function updateTotalPrice() {
-            const numberOfGuests = parseInt(guestsSelect.value);
-            const totalPrice = pricePerGuest * numberOfGuests;
-            totalPriceElement.textContent = `${totalPrice.toLocaleString()} VND`;
-        }
-
-        guestsSelect.addEventListener('change', updateTotalPrice);
-
-        document.getElementById('book').addEventListener('click', function(e) {
-            e.preventDefault();
-
-            // Lấy dữ liệu từ form
-            const ID = document.getElementById('tour-code').textContent;
-            const tourName = document.getElementById('tour-name').textContent;
-            const departureDate = document.getElementById('departure-date').value;
-            const guests = document.getElementById('guests').value;
-            const totalPrice = document.getElementById('total-price').textContent;
-
-            // Lấy ảnh bìa (slide đầu tiên)
-            const firstSlideImg = document.querySelector('.slideshow-container .slide img');
-            const tourImage = firstSlideImg ? firstSlideImg.getAttribute('src') : '';
-
-            // Lưu vào localStorage
-            localStorage.setItem('tour_image', tourImage);
-            localStorage.setItem('tour_code', ID);
-            localStorage.setItem('tour_name', tourName);
-            localStorage.setItem('tour_departure_date', departureDate);
-            localStorage.setItem('tour_guests', guests);
-            localStorage.setItem('tour_total_price', totalPrice);
-
-            // Chuyển sang trang checkout
-            window.location.href = '/checkout.html';
-        });
-    </script>
     <div class="support-box">
         <h3>TỔNG ĐÀI TƯ VẤN</h3>
         <p>Mọi thắc mắc của Quý khách vui lòng gọi:</p>
@@ -276,21 +233,6 @@
             </div>
         </div>
     </section>
-    <script>
-        document.querySelectorAll('.accordion-header').forEach(button => {
-        button.addEventListener('click', () => {
-            const content = button.nextElementSibling;
-
-            button.classList.toggle('active');
-
-            if (button.classList.contains('active')) {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
-        });
-    });
-    </script>
     <section class="destinations">
         <h1>TOUR NỔI BẬT - ĐỪNG BỎ LỠ</h1>
         <p>Khám phá những điểm đến tuyệt vời và trải nghiệm những chuyến đi đáng nhớ với ChipTrip!</p>

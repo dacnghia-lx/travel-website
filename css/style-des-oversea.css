@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-color: #3674b5;
+  --sub--color: #73b2d3;
+  --text-color: #000000;
+  --background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Nav */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10px;
+  padding: 0;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav_links li {
+  position: relative;
+  padding: 0 20px;
+}
+
+.nav_links a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 10px 20px;
+}
+
+.nav_links a:hover {
+  color: #0088a9;
+}
+
+/* Style cho submenu */
+.sub_menu,
+.sub_menu_2 {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 220px;
+  opacity: 0;
+  display: none;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  left: 0;
+  top: 100%;
+  padding: 8px 0;
+}
+
+/* Hiển thị submenu khi hover */
+.nav_links li:hover > .sub_menu,
+.sub_menu li:hover > .sub_menu_2 {
+  opacity: 1;
+  display: block;
+  transform: translateY(0);
+}
+
+.sub_menu ul,
+.sub_menu_2 ul {
+  list-style: none;
+}
+
+.sub_menu li,
+.sub_menu_2 li {
+  position: relative;
+  padding: 0;
+}
+
+.sub_menu a,
+.sub_menu_2 a {
+  padding: 12px 20px;
+  font-size: 14px;
+  display: block;
+  border-left: 3px solid transparent;
+}
+
+.sub_menu a:hover,
+.sub_menu_2 a:hover {
+  background-color: #b8bccc;
+  border-left: 3px solid #0088a9;
+}
+
+/* Vị trí cho submenu cấp 2 */
+.sub_menu_2 {
+  left: 100%;
+  top: 0;
+}
+
+.sub_menu li > a:after {
+  position: absolute;
+  right: 15px;
+  font-size: 12px;
+}
+
+/* ############################## HERO #################################### */
+.hero-bg {
+  position: relative;
+  height: 300px;
+  background-image: url("/img/info/des_banner/banner_des_dos.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 40% tối*/
+  z-index: 2;
+}
+
+.hero-content {
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Thêm bóng cho chữ */
+  z-index: 3;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+/* thanh điều hướng */
+.breadcrumb {
+  font-size: 14px;
+  color: #fff;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.breadcrumb a:hover {
+  color: #a3d5f7;
+}
+
+/* #################################### MAIN #################################### */
+/* Sidebar */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container p {
+  text-indent: 20px;
+  margin-top: 10px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 20px;
+  min-height: 100vh; /* Đảm bảo main-content có chiều cao tối thiểu để sidebar có thể trôi */
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+  position: sticky; /* Sử dụng sticky để sidebar trôi theo khi cuộn */
+  top: 20px; /* Khoảng cách từ đỉnh trang */
+  align-self: flex-start; /* Đảm bảo sidebar bắt đầu từ đầu của main-content */
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* flexbox */
+/* flexbox */
+#filterForm {
+  position: relative; /* Đổi từ fixed thành relative để form nằm trong sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#filterForm select, input {
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#filterForm select:hover, input:hover {
+  background-color: #c1e1f7;
+  transition: 0.3s;
+  border-color: #0074cc;
+}
+#filterForm select option {
+  background-color: #ffffff;
+}
+
+.sidebar label {
+  display: block;
+  margin: 10px 0px 5px;
+  font-weight: bold;
+}
+
+.sel {
+  font-weight: bold;
+}
+
+.toggle-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 20px;
+  width: 100%;
+}
+
+.toggle-btn {
+  flex: 1 1 calc(50% - 10px); /* 2 ô mỗi hàng thay vì 4 */
+  text-align: center;
+  padding: 13px 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+.toggle-btn:hover {
+  background-color: #f0f8ff;
+  border-color: #0074cc;
+}
+
+.toggle-btn.active {
+  background-color: #0074cc;
+  color: white;
+  border-color: #005fa3;
+}
+
+/* Đảm bảo các input và select có kích thước đồng nhất */
+.sidebar select,
+.sidebar input,
+.sidebar button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  background: #0074cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar button:hover {
+  background: #005fa3;
+  transition: 0.4s;
+}
+
+/* Tour-list */
+.tour-list {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.tour-list a {
+  text-decoration: none;
+}
+
+.tour-card {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+
+.tour-card img {
+  width: 310px;
+  object-fit: cover;
+  
+}
+
+.tour-info {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-info h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tour-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.tour-details .detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.tour-dates {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.tour-dates span {
+  font-size: 14px;
+  color: #666;
+}
+
+.tour-dates button.date-btn {
+  background-color: #ffffff;
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tour-dates button.date-btn:hover {
+  background-color: #ff4d4f;
+  color: white;
+  transition: 0.3s;
+}
+
+.tour-dates button.nav-btn {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.tour-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour-meta .price {
+  font-size: 18px;
+  color: #e53935;
+  font-weight: bold;
+}
+
+.tour-meta .price span {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+
+.tour-meta button {
+  background-color: #004c99;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tour-meta button a {
+  color: #fff;
+}
+
+
+.tour-meta button:hover {
+  background-color: #003a77;
+}
+
+.tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #ff4081;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* #################################### FOOTER #################################### */
+.footer {
+  background-color: #a3d5f7;
+  color: #000;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 20px 20px 0px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section li {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer-section li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons img,
+.payment-icons img {
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.subscribe-box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.subscribe-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+
+.subscribe-box img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.footer-container {
+  background-color: #0a2c52;
+  height: 40px;
+  width: 100%; /* Đảm bảo chiều rộng 100% */
+  margin-top: -50px; /* Thêm khoảng cách giữa footer và nội dung */
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.payment-icons img {
+  margin: 0 5px;
+  height: 100px;
+  width: 200px;
+}

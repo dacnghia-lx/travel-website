@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon//favicon-16x16.png">
+    <link rel="manifest" href="./icon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style-des-domestic.css">
+    <title>ChipTrip - Du lịch nước ngoài</title>
+</head>
+<body>
+  <header>
+    <div><img class="logo" src="img/logo.svg" alt="logo" /></div>
+    <nav id="navbar">
+      <ul class="nav_links">
+        <li><a href="./about.html">Giới thiệu</a></li>
+        <li>
+          <a href="/destination.html">Điểm đến</a>
+          <div class="sub_menu">
+            <ul>
+              <li><a href="/des-domestic.html">Du lịch trong nước</a>
+                <div class="sub_menu_2">
+                  <ul>
+                    <li><a href="/destinations/sub_domestic/mienbac.html">Miền Bắc</a></li>
+                    <li><a href="/destinations/sub_domestic/mientrung.html">Miền Trung</a></li>
+                    <li><a href="/destinations/sub_domestic/miennam.html">Miền Nam</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="des-oversea.html">Du lịch nước ngoài</a>
+                <div class="sub_menu_2">
+                  <ul>
+                    <li><a href="/destinations/sub_overseas/asian.html">Châu Á</a></li>
+                    <li><a href="/destinations/sub_overseas/europe.html">Châu Âu</a></li>
+                    <li><a href="/destinations/sub_overseas/america.html">Châu Mỹ</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="contact.html">Liên hệ</a></li>
+        <li><a href="news.html">Tin tức</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- ################################# HERO BACKGROUND #################################-->
+    <section class="hero-bg">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Điểm đến</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> >
+                <a href="./destination.html">Điểm đến</a> >
+                Nước ngoài
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>DU LỊCH CHÂU ÂU</h1>
+        <p>Khám phá vẻ đẹp cổ kính và lãng mạn của Châu Âu với những điểm đến hấp dẫn. Từ các thành phố lịch sử đến những công trình kiến trúc nghệ thuật, Châu Âu mang đến những trải nghiệm khó quên.</p>
+        <p>Paris - Kinh đô ánh sáng, Rome - Thành phố vĩnh hằng, và London - Thành phố sương mù là những điểm đến không thể bỏ qua. Mỗi nơi đều mang một nét đặc trưng riêng, từ văn hóa, ẩm thực đến cảnh quan tuyệt đẹp.</p>
+        <p>Hãy cùng chúng tôi lên kế hoạch cho chuyến hành trình khám phá Châu Âu, để tận hưởng những khoảnh khắc đáng nhớ tại các điểm đến mơ ước!</p>
+    </div>
+
+    <!-- ################################# MAIN CONTENT #################################-->
+    <main class="container main-content">
+        <aside class="sidebar">
+            <h3>BỘ LỌC TÌM KIẾM</h3>
+            <form id="filterForm">
+              <label>Ngân sách:</label>
+              <div class="toggle-buttons" data-group="budget" data-single="true">
+                <div class="toggle-btn" data-value="under20">Dưới 20 triệu</div>
+                <div class="toggle-btn" data-value="20to50">Từ 20 - 50 triệu</div>
+                <div class="toggle-btn" data-value="50to100">Từ 50 - 100 triệu</div>
+                <div class="toggle-btn" data-value="over100">Trên 100 triệu</div>
+              </div>
+              <label>Điểm khởi hành:</label>
+              <select class="sel">
+                <option>Tất cả</option>
+                <option>TP. HCM</option>
+                <option>Hà Nội</option>
+                <option>Đà Nẵng</option>
+              </select>
+              <label>Điểm đến:</label>
+              <select class="sel">
+                <option>Tất cả</option>
+                <option>Châu Á</option>
+                <option>Châu Âu</option>
+                <option>Châu Mỹ</option>
+              </select>
+              <label>Ngày đi:</label>
+              <input type="date" class="sel">
+              <label>Dòng tour:</label>
+              <div class="toggle-buttons" data-group="type" data-single="true">
+                <div class="toggle-btn" data-value="vip">Cao cấp</div>
+                <div class="toggle-btn" data-value="standard">Tiêu chuẩn</div>
+                <div class="toggle-btn" data-value="budget">Tiết kiệm</div>
+                <div class="toggle-btn" data-value="hotdeal">Giá tốt</div>
+              </div>
+              <button type="submit">Áp dụng</button>
+            </form>
+        </aside>
+        <!-- Tour-list -->
+        <section class="tour-list">
+            <!-- Tour 2: Châu Âu -->
+            <div class="tour-card">
+                <img src="/img/info/des_banner/paris.jpg" alt="Tour Paris">
+                <div class="tour-info">
+                  <div>
+                    <h3>Paris - Kinh đô ánh sáng</h3>
+                    <div class="tour-details">
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-ticket"></i></span>
+                        <span>Mã tour: EURO-PARIS-002</span>
+                      </div>
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        <span>Thời gian: 7N6D</span>
+                      </div>
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Khởi hành: Hà Nội</span>
+                      </div>
+                    </div>
+                    <div class="tour-dates">
+                      <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>Ngày khởi hành:</span>
+                      <button class="nav-btn">←</button>
+                      <button class="date-btn">05/06</button>
+                      <button class="date-btn">12/06</button>
+                      <button class="date-btn">19/06</button>
+                      <button class="date-btn">26/06</button>
+                      <button class="nav-btn">→</button>
+                    </div>
+                  </div>
+                  <div style="text-align: left;">Giá từ:</div>
+                  <div class="tour-meta">
+                    <div class="price">45.000.000 <span>đ</span></div>
+                    <button><a href="#">Xem chi tiết</a></button>
+                  </div>
+                </div>
+                <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Cao cấp</div>
+            </div>
+
+            <!-- Tour 5: Châu Âu -->
+            <div class="tour-card">
+                <img src="/img/info/des_banner/rome.jpg" alt="Tour Rome">
+                <div class="tour-info">
+                    <div>
+                        <h3>Rome - Thành phố vĩnh hằng</h3>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <span><i class="fa-solid fa-ticket"></i></span>
+                                <span>Mã tour: EURO-ROME-005</span>
+                            </div>
+                            <div class="detail-item">
+                                <span><i class="fa-solid fa-clock"></i></span>
+                                <span>Thời gian: 6N5D</span>
+                            </div>
+                            <div class="detail-item">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <span>Khởi hành: Hà Nội</span>
+                            </div>
+                        </div>
+                        <div class="tour-dates">
+                            <span><i class="fa-solid fa-calendar"></i></span>
+                            <span>Ngày khởi hành:</span>
+                            <button class="nav-btn">←</button>
+                            <button class="date-btn">01/07</button>
+                            <button class="date-btn">08/07</button>
+                            <button class="date-btn">15/07</button>
+                            <button class="nav-btn">→</button>
+                        </div>
+                    </div>
+                    <div style="text-align: left;">Giá từ:</div>
+                    <div class="tour-meta">
+                        <div class="price">50.000.000 <span>đ</span></div>
+                        <button><a href="#">Xem chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Cao cấp</div>
+            </div>
+
+            <!-- Tour 8: Châu Âu -->
+            <div class="tour-card">
+                <img src="/img/info/des_banner/london.jpg" alt="Tour London">
+                <div class="tour-info">
+                    <div>
+                        <h3>London - Thành phố sương mù</h3>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <span><i class="fa-solid fa-ticket"></i></span>
+                                <span>Mã tour: EURO-LONDON-008</span>
+                            </div>
+                            <div class="detail-item">
+                                <span><i class="fa-solid fa-clock"></i></span>
+                                <span>Thời gian: 7N6D</span>
+                            </div>
+                            <div class="detail-item">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <span>Khởi hành: Hà Nội</span>
+                            </div>
+                        </div>
+                        <div class="tour-dates">
+                            <span><i class="fa-solid fa-calendar"></i></span>
+                            <span>Ngày khởi hành:</span>
+                            <button class="nav-btn">←</button>
+                            <button class="date-btn">05/07</button>
+                            <button class="date-btn">12/07</button>
+                            <button class="date-btn">19/07</button>
+                            <button class="nav-btn">→</button>
+                        </div>
+                    </div>
+                    <div style="text-align: left;">Giá từ:</div>
+                    <div class="tour-meta">
+                        <div class="price">55.000.000 <span>đ</span></div>
+                        <button><a href="#">Xem chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiêu chuẩn</div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/des.js"></script>
+
+    <!-- ################################# FOOTER ################################# -->
+    <div class="footer-container"></div>
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h4>Liên hệ</h4>
+      <p>235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+      <p>Từ 7:00 - 17:30 hằng ngày</p>
+      <p>Từ 7:00 - 15:00 Chủ Nhật</p>
+      <hr style="width: 80%; margin: 10px 0;" />
+      <p>Hỗ trợ khách hàng qua hotline 24/7</p>
+      <p>(+84) 034 958 0476</p>
+      <p>(+84) 034 958 0416</p>
+      <div class="social-icons">
+        <img src="img/footer/social/face.svg" />
+        <img src="img/footer/social/ins.svg" />
+        <img src="img/footer/social/messenger.svg" />
+        <img src="img/footer/social/tiktok.svg" />
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Thông tin</h4>
+      <ul>
+        <li><a href="about.html" target="_blank">Giới thiệu</li></a>
+        <li><a href="news.html" target="_blank">Tin tức</li></a>
+        <li><a href="contact.html" target="_blank">Liên Hệ</li></a>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Dịch vụ</h4>
+      <strong><a href="des-domestic.html">Du lịch trong nước</a></strong>
+      <ul>
+        <li><a href="destinations/sub_domestic/mienbac.html">Miền Bắc</li></a>
+        <li><a href="destinations/sub_domestic/mientrung.html">Miền Trung</li></a>
+        <li><a href="destinations/sub_domestic/miennam.html">Miền Nam</li></a>
+      </ul>
+      <strong><a href="des-overseas.html">Du lịch nước ngoài</a></strong>
+      <ul>
+        <li><a href="destinations/sub_overseas/europe.html">Châu Âu</li></a>
+        <li><a href="destinations/sub_overseas/asia.html">Châu Á</li></a>
+        <li><a href="destinations/sub_overseas/americas.html">Châu Mỹ</li></a>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Đăng ký để nhận tin từ chúng tôi:</h4>
+      <div class="subscribe-box">
+        <input type="email" placeholder="Your email" />
+        <img src="img/footer/send.svg"/>
+      </div>
+      <h4>Chấp nhận thanh toán</h4>
+      <div class="payment-icons">
+        <img src="img/footer/icon.png" />
+      </div>
+    </div>
+  </footer>
+    <script src="js/des.js"></script>
+</body>
+</html>
