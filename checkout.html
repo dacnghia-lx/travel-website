@@ -94,7 +94,7 @@
         <div class="tour-info">
             <h2>Thông tin đặt tour</h2>
             <div class="tour-summary">
-                <img src="img/info//des_banner/sapa.jpg" alt="Tour Sapa">
+                <img id="tour-image" src="img/info//des_banner/sapa.jpg" alt="Tour">
                 <div>
                     <h3 id="tour-name">Tên tour</h3>
                     <p><strong>Mã tour:</strong> <span id="tour-code"></span></p>
@@ -116,6 +116,7 @@
             const date = localStorage.getItem('tour_departure_date');
             const guests = localStorage.getItem('tour_guests');
             const price = localStorage.getItem('tour_total_price');
+            const image = localStorage.getItem('tour_image');
 
 
             if (tourName) document.getElementById('tour-name').textContent = tourName;
@@ -123,6 +124,7 @@
             if (date) document.getElementById('checkout-date').textContent = date;
             if (guests) document.getElementById('checkout-guests').textContent = guests;
             if (price) document.getElementById('checkout-price').textContent = price;
+            if (image) document.getElementById('tour-image').src = image;
         });
         </script>
     <footer class="footer">
