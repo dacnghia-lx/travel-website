@@ -401,6 +401,110 @@ header {
   color: #73b2d3;
 }
 
+/* ############################## REVIEW SECTION #################################### */
+.review-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.review-header {
+  margin-bottom: 40px;
+}
+
+.review-header .sub-title {
+  color: #f9a825;
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.review-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.review-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-content {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-item {
+  display: none;
+  opacity: 0;
+}
+
+.review-item.active {
+  display: block;
+  opacity: 1;
+}
+
+.review-item p {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.rating {
+  margin-bottom: 15px;
+}
+
+.rating i {
+  color: #f9a825;
+  font-size: 16px;
+}
+
+.review-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.review-item .location {
+  font-size: 14px;
+  color: #777;
+}
+
+.carousel-btn {
+  background: none;
+  border: 2px solid #73b2d3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  top: 50%;
+}
+
+.carousel-btn i {
+  color: #73b2d3;
+  font-size: 16px;
+}
+
+.carousel-btn:hover {
+  background: #73b2d3;
+}
+
+.carousel-btn:hover i {
+  color: #fff;
+}
+
 /* #################################### FOOTER #################################### */
 .footer {
   background-color: #a3d5f7;
