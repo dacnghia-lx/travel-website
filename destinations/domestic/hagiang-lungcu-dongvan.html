@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Tour Sapa 3 ngày 2 đêm: Hành trình khám phá Đỉnh Fansipan và thăm Bản Cát Cát</title>
+    <title>Hà Giang - Lũng Cú - Đồng Văn</title>
     <link rel="stylesheet" href="/css/info.css">
     <title>Chi tiết</title>
 </head>
@@ -75,7 +75,7 @@
     </nav>
     <section class="tour-details">
         <div class="tour-info">
-            <h2 id="tour-name">Tour Sapa 3 ngày 2 đêm: Hành trình khám phá Đỉnh Fansipan và thăm Bản Cát Cát</h2>
+            <h2 id="tour-name">Hà Giang - Lũng Cú - Đồng Văn</h2>
             <div class="slideshow-container">
                 <div class="slide fade">
                     <img src="/img/info/des_banner/hagiang.png" alt="Hạ Long" style="width:100%">
@@ -156,7 +156,7 @@
 
             // Lấy dữ liệu từ form
             const ID = document.getElementById('tour-code').textContent;
-            const tourName = "Hà Giang - Lũng Cú - Đồng Văn";
+            const tourName = document.getElementById('tour-name').textContent;
             const departureDate = document.getElementById('departure-date').value;
             const guests = document.getElementById('guests').value;
             const totalPrice = document.getElementById('total-price').textContent;
@@ -229,40 +229,28 @@
                 <button class="accordion-header">CHI TIẾT CHUYẾN ĐI</button>
                 <div class="accordion-content">
                     <div id="day-1">
-                        <h3>NGÀY 01 | HÀ NỘI - SAPA - CẢNH ĐIỂM MOANA (ĂN TRƯA/TỐI)</h3>
-                        <p><strong>Sáng:</strong> Xe của Vietnam Booking sẽ đón quý khách trên đường Trần Quang Khải như đã hẹn để đưa đoàn đến với Sapa. Chúng tôi thường di chuyển theo hướng Đại học Ngoại ngữ, Công viên Hòa Bình, KCN Thăng Long, Nội Bài để ra cao tốc. Quý khách cần đăng ký điểm đón trước ngày khởi hành.</p>
-                        <p><strong>Lưu ý:</strong> Nếu quý khách có chuyến bay sớm và hạ cánh trước 07h45 tại sân bay Nội Bài, chúng tôi sẽ hỗ trợ đón tại sân bay với phí 50,000 VND/nhóm. Hoặc đối với khách đến từ đêm trước, chúng tôi sẽ đón tại <strong>ngã 3 Kim Anh</strong> vào khoảng 07h45 - 08h00.</p>
-                        <p><strong>Trưa:</strong> Đoàn đến Sapa rồi dùng bữa trưa và nhận phòng tại khách sạn. Quý khách tự do tham quan.</p>
-                        <p><strong>Chiều:</strong> Tour Sapa 3 ngày 2 đêm sẽ đưa quý khách đến với <strong>cảnh điểm Moana</strong>.</p>
-                        <ul>
-                            <li>Quý khách có cơ hội check-in với nhiều tiểu cảnh đẹp: Tượng Cô Gái Moana, Cổng Trời Bali, Hồ Vô Cực, Bàn Tay Vàng, Cây Cô Đơn, Xích Đu Tử Thần và Khu Cà Phê.</li>
-                        </ul>
-                        <p><strong>Tối:</strong> Sau bữa tối, quý khách tự do lựa chọn các hoạt động như: Tham quan Nhà thờ Đá, khám phá chợ đêm (thứ 7), thưởng thức ẩm thực địa phương.</p>
-                        <p>Đoàn nghỉ đêm tại Sapa.</p>
+                        <h3>NGÀY 01 | HÀ NỘI – HÀ GIANG – QUẢN BẠ – YÊN MINH (ĂN TRƯA/TỐI)</h3>
+                        <p><strong>Sáng:</strong> Xe và hướng dẫn viên đón quý khách tại điểm hẹn khởi hành đi Hà Giang. Trên đường đi, đoàn dừng chân nghỉ ngơi, ăn sáng tự túc.</p>
+                        <p><strong>Trưa:</strong> Đến thành phố Hà Giang, đoàn dùng bữa trưa tại nhà hàng địa phương.</p>
+                        <p><strong>Chiều:</strong> Đoàn tiếp tục hành trình, chinh phục Cổng Trời Quản Bạ, Núi Đôi Cô Tiên, ngắm nhìn dòng sông Miện thơ mộng. Đến Yên Minh, nhận phòng khách sạn nghỉ ngơi.</p>
+                        <p><strong>Tối:</strong> Quý khách dùng bữa tối tại nhà hàng, tự do khám phá Yên Minh về đêm.</p>
+                        <p>Đoàn nghỉ đêm tại Yên Minh.</p>
                     </div>
-                
+                    
                     <div id="day-2-3" style="display: none;">
-                        <h3>NGÀY 02 | SAPA - FANSIPAN - BẢN CÁT CÁT (ĂN SÁNG/TRƯA/TỐI)</h3>
-                        <p><strong>Sáng:</strong> Đoàn dùng bữa sáng tại khách sạn. Bắt đầu Tour Sapa 3 ngày 2 đêm ngày thứ 2, quý khách khởi hành đến Fansipan. Đây là hành trình chinh phục nóc nhà Đông Dương bằng hệ thống cáp treo 3 dây hiện đại nhất thế giới.</p>
-                        <ul>
-                            <li>Từ ga cáp treo, quý khách sẽ đi qua cổng trời Thanh Vân Đắc Lộ, Bích Vân Thiền Tự và đại tượng Phật A Di Đà.</li>
-                            <li>Dạo bước trên con đường La Hán và tham quan Kim Sơn Bảo Thắng cùng các ngôi chùa gỗ cổ kính.</li>
-                            <li>Vượt qua 600 bậc đá để đến đỉnh Fansipan ở độ cao 3.143 mét. Từ đây, quý khách có thể ngắm trọn vẹn cảnh đẹp Sapa từ trên cao.</li>
-                        </ul>
-                        <p><strong>Trưa:</strong> Đoàn quay trở lại thị trấn Sapa để dùng bữa trưa tại nhà hàng.</p>
-                        <p><strong>Chiều:</strong> Tiếp tục chuyến hành trình tour Sapa 3 ngày 2 đêm, quý khách sẽ đến tham quan:</p>
-                        <ul>
-                            <li><strong>Bản Cát Cát:</strong> Tại đây, quý khách sẽ có cơ hội tìm hiểu đời sống của người đồng bào dân tộc H’mông, tham quan thác Tiên Sa và thưởng thức show biểu diễn văn nghệ truyền thống tại nhà máy thủy điện cũ.</li>
-                        </ul>
-                        <p><strong>Tối:</strong> Đoàn dùng bữa tối và tự do vui chơi. Quý khách có thể tắm lá dao đỏ để thư giãn sau một ngày tham quan dài (chi phí tự túc). Đoàn nghỉ đêm tại Sapa.</p>
-                
-                        <h3>NGÀY 03 | TỰ DO THAM QUAN - HÀ NỘI (ĂN SÁNG/TRƯA)</h3>
-                        <p><strong>Sáng:</strong> Đoàn dùng bữa sáng rồi tự do tham quan và mua sắm tại Sapa. Quý khách có thể ghé thăm các điểm tham quan khác như: Vườn hồng cổ Sapa, Thung lũng Mường Hoa, Vườn hoa cẩm tú cầu tại Sâu Chua, Tu viện cổ Tả Phìn và Swing Sapa (chi phí tự túc).</p>
-                        <p><strong>Trưa:</strong> Đoàn quay lại thị trấn Sapa để trả phòng và dùng cơm trưa.</p>
-                        <p><strong>Chiều:</strong> Đoàn lên xe về lại Hà Nội.</p>
-                        <p><strong>Tối:</strong> Đến sân bay Nội Bài, xe sẽ đưa quý khách vào sảnh sân bay (nếu đăng ký trước). Sau khi về đến Hà Nội, Tour Sapa 3 ngày 2 đêm đến đây là kết thúc. HDV chào tạm biệt và hẹn gặp lại quý khách trong những tour du lịch giá rẻ tiếp theo.</p>
+                        <h3>NGÀY 02 | YÊN MINH – LŨNG CÚ – ĐỒNG VĂN (ĂN SÁNG/TRƯA/TỐI)</h3>
+                        <p><strong>Sáng:</strong> Đoàn ăn sáng tại khách sạn. Khởi hành đi Lũng Cú – điểm cực Bắc của Tổ quốc, tham quan Cột cờ Lũng Cú, làng Lô Lô Chải.</p>
+                        <p><strong>Trưa:</strong> Đoàn dùng bữa trưa tại nhà hàng địa phương.</p>
+                        <p><strong>Chiều:</strong> Tham quan Dinh thự Vua Mèo (Vương Chí Sình), Phố cổ Đồng Văn, chợ Đồng Văn, thưởng thức cà phê phố cổ.</p>
+                        <p><strong>Tối:</strong> Đoàn ăn tối tại nhà hàng, tự do khám phá Đồng Văn về đêm.</p>
+                        <p>Đoàn nghỉ đêm tại Đồng Văn.</p>
+                    
+                        <h3>NGÀY 03 | ĐỒNG VĂN – MÃ PÍ LÈNG – HÀ GIANG – HÀ NỘI (ĂN SÁNG/TRƯA)</h3>
+                        <p><strong>Sáng:</strong> Đoàn ăn sáng, trả phòng khách sạn. Khởi hành chinh phục đèo Mã Pí Lèng – một trong “tứ đại đỉnh đèo” nổi tiếng Việt Nam, ngắm sông Nho Quế xanh biếc uốn lượn dưới chân đèo.</p>
+                        <p><strong>Trưa:</strong> Đoàn dùng bữa trưa tại Hà Giang.</p>
+                        <p><strong>Chiều:</strong> Xe đưa đoàn về lại Hà Nội. Trên đường về, đoàn dừng chân nghỉ ngơi, mua đặc sản Tây Bắc về làm quà.</p>
+                        <p><strong>Tối:</strong> Về đến Hà Nội, kết thúc chương trình. Hướng dẫn viên chia tay và hẹn gặp lại quý khách trong những hành trình tiếp theo!</p>
                     </div>
-                
                     <button id="read-more-btn" class="read-more">Xem thêm</button>
                 </div>
             </div>

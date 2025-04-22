@@ -428,6 +428,16 @@ header {
   font-size: 14px;
 }
 
+.footer-section li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000;
+}
+
 .footer-section ul {
   list-style: none;
   padding: 0;
