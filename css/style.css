@@ -303,6 +303,7 @@ header {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 500px;
 }
 
 .destination-info:hover {
@@ -318,10 +319,6 @@ header {
 
 .destination-info .title {
     padding: 15px 20px 5px;
-}
-
-.destination-info .title {
-    padding: 15px 20px 5px;
     text-align: left;
 }
 
@@ -329,6 +326,9 @@ header {
     font-size: 16px;
     color: var(--text-color);
     font-weight: 600;
+    white-space: nowrap;         /* Không xuống dòng */
+    overflow: hidden;            /* Ẩn phần dư */
+    text-overflow: ellipsis;     /* Hiển thị ... nếu quá dài */
 }
 
 .destination-info > div:nth-child(3) {
@@ -375,7 +375,6 @@ header {
     background-color: #006d8a;
     color: #ffffff;
 }
-
 /* Phần tiêu đề chính */
 .news {
     padding: 50px 5%;

@@ -108,14 +108,19 @@
               </select>
 
               <label>Điểm đến:</label>
-              <select class="sel">
+              <select class="sel" id="destination-filter" name="departure">
                 <option>Tất cả</option>
                 <option>TP. HCM</option>
                 <option>Hà Nội</option>
-                <option>Thái Bình</option>
+                <option>Đà Nẵng</option>
+                <option>Hạ Long</option>
+                <option>Đà Lạt</option>
+                <option>Yên Bái</option>
+                <option>Sapa</option>
+                <option>Tây Ninh</option>
               </select>          
               <label>Dòng tour:</label>
-              <div class="toggle-buttons" data-group="type" data-single="true">
+              <div class="toggle-buttons" data-group="type" data-single="true" id="type-filter">
                 <div class="toggle-btn" data-value="vip">Cao cấp</div>
                 <div class="toggle-btn" data-value="standard">Tiêu chuẩn</div>
                 <div class="toggle-btn" data-value="budget">Tiết kiệm</div>
@@ -126,9 +131,9 @@
             </form>
         </aside>
         <!-- Tour-list -->
-        <section class="tour-list">
+        <section class="tour-list" id="tour-list">
         <!-- Tour Bắc -->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="under5" data-departure="Hà Nội" data-type="vip" data-destination="Hà Giang">
                 <img src="/img/info/des_banner/hagiang.png" alt="Tour Hà Giang">
                 <div class="tour-info">
                   <div>
@@ -167,7 +172,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!-- Tour 2 -->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="under5" data-departure="Hà Nội" data-type="budget" data-destination="Sapa">
                 <img src="./img/info/des_banner/sapa.jpg" alt="Tour Sapa">
                 <div class="tour-info">
                   <div>
@@ -206,7 +211,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!-- Tour 3 -->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="under5" data-departure="Hà Nội" data-type="budget" data-destination="Hạ Long">
                 <img src="/img/info/des_banner/halong.jpg" alt="Tour Vịnh Hạ Long">
                 <div class="tour-info">
                   <div>
@@ -245,7 +250,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!-- Tour 1 -->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="5to10" data-departure="Hà Nội" data-type="budget" data-destination="Đà Lạt">
                 <img src="/img/info/des_banner/dalat.png" alt="Tour Đà Lạt">
                 <div class="tour-info">
                   <div>
@@ -284,7 +289,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!-- Tour 1 -->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="5to10" data-departure="Hà Nội" data-type="budget" data-destination="Cao Bằng">
                 <img src="/img/info/des_banner/caobang.png" alt="Tour Cao Bằng">
                 <div class="tour-info">
                   <div>
@@ -323,7 +328,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!-- Tour 6 -->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="5to10" data-departure="Hà Nội" data-type="budget" data-destination="Đà Nẵng">
                 <img src="/img/info/des_banner/danang.png" alt="Tour Đà Nẵng">
                 <div class="tour-info">
                   <div>
@@ -362,7 +367,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!-- Tour 7 -->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="under5" data-departure="Hà Nội" data-type="budget" data-destination="Tây Ninh">
                 <img src="/img/info/des_banner/tayning.png" alt="Tour Tây Ninh">
                 <div class="tour-info">
                   <div>
@@ -401,7 +406,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!--Tour 9-->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="under5" data-departure="Hà Nội" data-type="budget" data-destination="Yên Bái">
                 <img src="/img/info/des_banner/yenbai.png" alt="Tour Yên Bái">
                 <div class="tour-info">
                   <div>
@@ -440,7 +445,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!--Tour 11-->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="under5" data-departure="Hà Nội" data-type="budget" data-destination="Sapa">
                 <img src="/img/info/des_banner/sapa-laocai.png" alt="Tour Sapa - Lào Cai - Hà Nội - Hạ Long">
                 <div class="tour-info">
                   <div>
@@ -479,7 +484,7 @@
                 <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
               </div>
               <!--Tour 12-->
-              <div class="tour-card">
+              <div class="tour-card" data-budget="under5" data-departure="Hà Nội" data-type="budget" data-destination="Quảng Ninh">
                 <img src="/img/info/des_banner/quangninh.png" alt="Tour Quảng Ninh">
                 <div class="tour-info">
                   <div>
@@ -584,5 +589,34 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/responsive.js"></script>
+    <script>
+    // Bộ lọc tour
+    document.getElementById('filterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Budget
+      let budget = null;
+      document.querySelectorAll('.toggle-buttons[data-group="budget"] .toggle-btn').forEach(btn => {
+        if (btn.classList.contains('active')) budget = btn.getAttribute('data-value');
+      });
+      // Departure
+      let departure = document.querySelectorAll('.sel')[0].value;
+      // Destination
+      let destination = document.getElementById('destination-filter').value;
+      // Type
+      let type = null;
+      document.querySelectorAll('.toggle-buttons[data-group="type"] .toggle-btn').forEach(btn => {
+        if (btn.classList.contains('active')) type = btn.getAttribute('data-value');
+      });
+
+      document.querySelectorAll('#tour-list .tour-card').forEach(card => {
+        let match = true;
+        if (budget && card.getAttribute('data-budget') !== budget) match = false;
+        if (departure !== 'Tất cả' && card.getAttribute('data-departure') !== departure) match = false;
+        if (destination !== 'Tất cả' && card.getAttribute('data-destination') !== destination) match = false;
+        if (type && card.getAttribute('data-type') !== type) match = false;
+        card.style.display = match ? '' : 'none';
+      });
+    });
+    </script>
 </body>
 </html>

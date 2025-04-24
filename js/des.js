@@ -11,3 +11,4 @@ document.querySelectorAll('.toggle-buttons').forEach(group => {
       }
     });
   });
+

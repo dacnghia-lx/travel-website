@@ -267,6 +267,96 @@ header {
     margin: 15px 0;
 }
 
+#payment-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 28px 24px 20px 24px;
+    max-width: 1200px;
+    margin: 32px auto 0 auto;
+    transition: box-shadow 0.2s;
+  }
+  
+  #payment-section h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #1a237e;
+    margin-bottom: 18px;
+  }
+  
+  #payment-section label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  #payment-section input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #1976d2;
+  }
+  
+  #card-form {
+    margin-top: 18px;
+  }
+  
+  #card-form div {
+    margin-bottom: 14px;
+  }
+  
+  #card-form label {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  #card-form input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #fafbfc;
+    transition: border 0.2s;
+  }
+  
+  #card-form input:focus {
+    border: 1.5px solid #1976d2;
+    outline: none;
+  }
+  
+  #qr-image {
+    text-align: center;
+  }
+  
+  #pay-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+    transition: background 0.2s;
+  }
+  
+  #pay-btn:hover {
+    background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+  }
+  
+  #qr-image img {
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+    background: #fafbfc;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  }
+
 .footer {
     background-color: #a3d5f7;
     color: #000;

@@ -126,7 +126,7 @@ header {
 .hero-bg {
     position: relative;
     height: 300px;
-    background-image: url("../img/news1/backhead.jpg");
+    background-image: url("/img/news/news1/backhead.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

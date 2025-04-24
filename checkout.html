@@ -111,6 +111,36 @@
             </div>
         </div>
     </section>
+    <div id="payment-section" style="display:none; margin-top:32px;">
+      <h3>Chọn phương thức thanh toán</h3>
+      <div>
+        <label><input type="radio" name="payment-method" value="counter"> Thanh toán tại quầy</label><br>
+        <label><input type="radio" name="payment-method" value="card"> Thanh toán bằng thẻ</label><br>
+        <label><input type="radio" name="payment-method" value="qr"> Thanh toán bằng mã QR</label>
+      </div>
+      <form id="card-form" style="display:none; margin-top:16px;">
+        <div>
+          <label>Số thẻ *</label>
+          <input type="text" id="card-number" maxlength="19" placeholder="1234 5678 9012 3456" required>
+        </div>
+        <div>
+          <label>Tên chủ thẻ *</label>
+          <input type="text" id="card-name" placeholder="Tên in trên thẻ" required>
+        </div>
+        <div>
+          <label>Ngày hết hạn *</label>
+          <input type="text" id="card-expiry" maxlength="5" placeholder="MM/YY" required>
+        </div>
+        <div>
+          <label>CVV *</label>
+          <input type="password" id="card-cvv" maxlength="4" placeholder="CVV" required>
+        </div>
+      </form>
+      <div id="qr-image" style="display:none; margin:16px 0;">
+        <img src="img/checkout/qr.jpg" alt="QR code" style="width:120px;">
+      </div>
+      <button id="pay-btn" style="margin-top:16px;">Thanh toán</button>
+    </div>
     <footer class="footer">
       <div class="footer-section">
         <h4>Liên hệ</h4>
