@@ -22,10 +22,15 @@
     <meta name="theme-color" content="#ffffff">
     <title>ChipTrip - Trang chủ</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
         <div><img class="logo" src="img/logo.svg" alt="logo" /></div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
         <nav id="navbar">
           <ul class="nav_links">
             <li><a href="./about.html">Giới thiệu</a></li>
@@ -96,16 +101,16 @@
         <p>Khám phá những điểm đến tuyệt vời và trải nghiệm những chuyến đi đáng nhớ với ChipTrip!</p>
         <div class="destinations-content">
             <div class="destination-info">
-                <img src="img/destinations/halong.jpg" alt="Vịnh Hạ Long">
+                <img src="img/info/des_banner/tokyo.jpg" alt="Vịnh Tokyo">
                 <div class="title">
-                    <h2>Vịnh Hạ Long</h2>
+                    <h2>Tokyo - Thành phố giao thoa giữa cổ xưa và hiện đại</h2>
                 </div>
                 <div>
                     <p>Khởi hành: Hà Nội</p>
                 </div>
                 <div class="price">
                     <p>Giá từ:</p>
-                    <span>4.500.000đ</span>
+                    <span>25.000.000đ</span>
                 </div>
                 <a href="#" class="book-btn">Đặt tour</a>
             </div>
@@ -124,16 +129,16 @@
                 <a href="#" class="book-btn">Đặt tour</a>
             </div>
             <div class="destination-info">
-                <img src="img/destinations/halong.jpg" alt="Vịnh Hạ Long">
+                <img src="img/info/des_banner/paris.jpg" alt="Tour Paris">
                 <div class="title">
-                    <h2>Vịnh Hạ Long</h2>
+                    <h2>Paris - Kinh đô ánh sáng</h2>
                 </div>
                 <div>
                     <p>Khởi hành: Hà Nội</p>
                 </div>
                 <div class="price">
                     <p>Giá từ:</p>
-                    <span>4.500.000đ</span>
+                    <span>45.000.000đ</span>
                 </div>
                 <a href="#" class="book-btn">Đặt tour</a>
             </div>
@@ -142,38 +147,41 @@
     <!--End of Destinations-->
     <div class="divider"></div>
     <!--News-->
-    <section class="news">
+    <section class="news" id="news">
         <h1>Tin tức du lịch</h1>
         <div class="news-content">
             <div class="news-item">
                 <img src="img/2-3.jpg" alt="News 1">
                 <div class="news-info">
-                    <h2>Title</h2>
-                    <p>Cuối tháng ba, công viên hồ Mochou ở Nam Kinh, tỉnh Giang Tô, phía đông Trung Quốc rực rỡ trong sắc hồng hoa đào, hoa mận, hoa mộc lan. Nơi đây ngoài cảnh thiên...</p>
+                    <h2>Top 10 thảo nguyên đẹp nhất Trung Quốc</h2>
+                    <p>Giữa không gian rộng lớn của đất trời phương Đông, những
+                      thảo nguyên trải dài bất tận ở Trung Quốc mang trong mình
+                      vẻ đẹp hoang sơ, thanh bình và đầy mê hoặc. Dù mỗi nơi có
+                      nét riêng...</p>
                     <a href="#">xem thêm</a>
                 </div>
             </div>
             <div class="news-item">
                 <img src="img/2-3.jpg" alt="News 2">
                 <div class="news-info">
-                    <h2>Title</h2>
-                    <p>Cuối tháng ba, công viên hồ Mochou ở Nam Kinh, tỉnh Giang Tô, phía đông Trung Quốc rực rỡ trong sắc hồng hoa đào, hoa mận, hoa mộc lan. Nơi đây ngoài cảnh thiên...</p>
+                    <h2>Món ăn đường phố Sài Gòn: 10 đặc sản phải thử khi du lịch Lễ 30/4</h2>
+                    <p>Nếu bạn đang chuẩn bị đến Sài Gòn xem diễu binh 30/4 kỷ niệm 50 năm Ngày Giải phóng miền Nam, thống nhất đất nước (30/4/1975 – 30/4/2025), thì đừng bỏ qua cơ hội khám phá...</p>
                     <a href="#">xem thêm</a>
                 </div>
             </div>
             <div class="news-item">
                 <img src="img/2-3.jpg" alt="News 3">
                 <div class="news-info">
-                    <h2>Title</h2>
-                    <p>Cuối tháng ba, công viên hồ Mochou ở Nam Kinh, tỉnh Giang Tô, phía đông Trung Quốc rực rỡ trong sắc hồng hoa đào, hoa mận, hoa mộc lan. Nơi đây ngoài cảnh thiên...</p>
+                    <h2>Top 5 món ăn ở Cao Bằng mang đậm hương sắc miền non nước</h2>
+                    <p>Cao Bằng nổi bật như một thiên đường ẩm thực, nơi du khách có thể thưởng thức những món ăn đặc sắc được chế biến từ các nguyên liệu tươi ngon, đặc trưng của vùng núi phía Bắc. Đây là một điểm đến lý tưởng dành cho những ai đam mê khám phá văn hóa...</p>
                     <a href="#">xem thêm</a>
                 </div>
             </div>
             <div class="news-item">
                 <img src="img/2-3.jpg" alt="News 4">
                 <div class="news-info">
-                    <h2>Title</h2>
-                    <p>Cuối tháng ba, công viên hồ Mochou ở Nam Kinh, tỉnh Giang Tô, phía đông Trung Quốc rực rỡ trong sắc hồng hoa đào, hoa mận, hoa mộc lan. Nơi đây ngoài cảnh thiên...</p>
+                    <h2>Top 5 ngôi chùa nổi tiếng ở Ấn Độ thu hút hàng triệu tín đồ mỗi năm</h2>
+                    <p>Ấn Độ, vùng đất của tâm linh và tín ngưỡng, là nơi hội tụ của nhiều nền tôn giáo lớn trên thế giới, đặc biệt là Ấn Độ giáo và Phật giáo. Trong hàng ngàn ngôi đền, ngôi chùa trải dài khắp quốc gia này, có những nơi không chỉ nổi bật về giá trị tôn giáo mà còn là kiệt tá...</p>
                     <a href="#">xem thêm</a>
                 </div>
             </div>
@@ -213,7 +221,7 @@
             <li><a href="destinations/sub_domestic/mientrung.html">Miền Trung</li></a>
             <li><a href="destinations/sub_domestic/miennam.html">Miền Nam</li></a>
           </ul>
-          <strong><a href="des-overseas.html">Du lịch nước ngoài</a></strong>
+          <strong><a href="des-oversea.html">Du lịch nước ngoài</a></strong>
           <ul>
             <li><a href="destinations/sub_overseas/europe.html">Châu Âu</li></a>
             <li><a href="destinations/sub_overseas/asia.html">Châu Á</li></a>
@@ -224,13 +232,20 @@
         <div class="footer-section">
           <h4>Đăng ký để nhận tin từ chúng tôi:</h4>
           <div class="subscribe-box">
-            <input type="email" placeholder="Your email" />
-            <img src="img/footer/send.svg"/>
+            <input id="email-input" type="email" placeholder="Your email" />
+            <button id="submit-button" style="background: none; border: none; padding: 0;">
+              <img src="img/footer/send.svg" alt="Gửi" style="width: 24px; height: 24px;">
+            </button>
           </div>
+          <div id="message" style="margin-top: 8px; font-size: 14px;"></div>
+          <script src="js/footer.js"></script>
           <h4>Chấp nhận thanh toán</h4>
           <div class="payment-icons">
             <img src="img/footer/icon.png" />
           </div>
         </div>
       </footer>
+    <script src="js/script.js"></script>
+    
+    </body>
 </html>

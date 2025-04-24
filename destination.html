@@ -23,12 +23,16 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/style-des.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <title>ChipTrip - Điểm đến</title>
 </head>
 
 <body>
   <header>
     <div><img class="logo" src="img/logo.svg" alt="logo" /></div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
     <nav id="navbar">
       <ul class="nav_links">
         <li><a href="./about.html">Giới thiệu</a></li>
@@ -86,14 +90,13 @@
           <p>15 Tours+</p>
         </div>
       </a>
-      <a href="#" class="box">
+      <a href="./des-oversea.html" class="box">
         <img src="/img/destinations/banner/overseas.png" alt="Nước ngoài" />
         <div class="box-title">
           <h2>Nước ngoài</h2>
           <p>15 Tours+</p>
         </div>
       </a>
-
     </section>
   </main>
   <!-- ################################# FOOTER ################################# -->
@@ -131,7 +134,8 @@
         <li><a href="destinations/sub_domestic/mientrung.html">Miền Trung</li></a>
         <li><a href="destinations/sub_domestic/miennam.html">Miền Nam</li></a>
       </ul>
-      <strong><a href="des-overseas.html">Du lịch nước ngoài</a></strong>
+    </ul>
+    <strong><a href="des-oversea.html">Du lịch nước ngoài</a></strong>
       <ul>
         <li><a href="destinations/sub_overseas/europe.html">Châu Âu</li></a>
         <li><a href="destinations/sub_overseas/asia.html">Châu Á</li></a>
@@ -142,15 +146,19 @@
     <div class="footer-section">
       <h4>Đăng ký để nhận tin từ chúng tôi:</h4>
       <div class="subscribe-box">
-        <input type="email" placeholder="Your email" />
-        <img src="img/footer/send.svg"/>
+        <input id="email-input" type="email" placeholder="Your email" />
+        <button id="submit-button" style="background: none; border: none; padding: 0;">
+          <img src="img/footer/send.svg" alt="Gửi" style="width: 24px; height: 24px;">
+        </button>
       </div>
+      <div id="message" style="margin-top: 8px; font-size: 14px;"></div>
+      <script src="js/footer.js"></script>
       <h4>Chấp nhận thanh toán</h4>
       <div class="payment-icons">
         <img src="img/footer/icon.png" />
       </div>
     </div>
   </footer>
+  <script src="js/responsive.js"></script>
 </body>
-
 </html>

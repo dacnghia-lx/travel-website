@@ -191,6 +191,11 @@ header {
   padding: 60px;
 }
 
+.destination-box img {
+  min-height: 290px;
+  min-width: 400px;
+}
+
 .box {
   position: relative;
   width: 500px;

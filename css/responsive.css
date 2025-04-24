@@ -1,0 +1,65 @@
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+/* Responsive nav: nav trượt từ bên phải khi có class .open */
+@media (max-width: 900px) {
+    #navbar {
+      position: absolute;
+      top: 0;
+      right: -260px;
+      width: 250px;
+      height: 100vh;
+      background: #fff;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+      transition: right 0.3s;
+      z-index: 1100;
+    }
+    #navbar.open {
+      right: 0;
+    }
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      right: 20px;
+      z-index: 1101;
+      font-size: 2rem;
+      cursor: pointer;
+      background: #fff;
+      border-radius: 4px;
+      padding: 6px 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .nav_links {
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav_links li {
+      margin: 0;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .sub_menu, .sub_menu_2 {
+        position: static !important;
+        box-shadow: none !important;
+        background: none !important;
+        display: none;
+        width: 100%;
+        padding: 0;
+      }
+      .nav_links li.active > .sub_menu {
+        display: block;
+      }
+      .sub_menu ul, .sub_menu_2 ul {
+        padding: 0;
+        margin: 0;
+      }
+      .sub_menu li, .sub_menu_2 li {
+        padding: 10px 20px;
+        border-bottom: 1px solid #eee;
+        background: #f9f9f9;
+      }
+  }

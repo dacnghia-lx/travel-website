@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon//favicon-16x16.png">
+    <link rel="manifest" href="./icon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style-des-domestic.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>ChipTrip - Điểm đến Việt Nam</title>
+</head>
+<body>
+  <header>
+    <div><img class="logo" src="/img/logo.svg" alt="logo" /></div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav id="navbar">
+      <ul class="nav_links">
+        <li><a href="/about.html">Giới thiệu</a></li>
+        <li>
+          <a href="/destination.html">Điểm đến</a>
+          <div class="sub_menu">
+            <ul>
+              <li><a href="/des-domestic.html">Du lịch trong nước</a>
+                <div class="sub_menu_2">
+                  <ul>
+                    <li><a href="/destinations/sub_domestic/mienbac.html">Miền Bắc</a></li>
+                    <li><a href="/destinations/sub_domestic/mientrung.html">Miền Trung</a></li>
+                    <li><a href="/destinations/sub_domestic/miennam.html">Miền Nam</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="/des-oversea.html">Du lịch nước ngoài</a>
+                <div class="sub_menu_2">
+                  <ul>
+                    <li><a href="/destinations/sub_overseas/asian.html">Châu Á</a></li>
+                    <li><a href="/destinations/sub_overseas/europe.html">Châu Âu</a></li>
+                    <li><a href="/destinations/sub_overseas/america.html">Châu Mỹ</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/contact.html">Liên hệ</a></li>
+        <li><a href="/news.html">Tin tức</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- ################################# HERO BACKGROUND #################################-->
+    <section class="hero-bg">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Điểm đến</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Trang chủ</a> >
+                <a href="./destination.html">Điểm đến</a> >
+                Trong nước
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>DU LỊCH MIỀN TRUNG</h1>
+        <p>Miền Trung Việt Nam – vùng đất đầy nắng gió – là nơi hội tụ những di sản văn hóa và thiên nhiên độc đáo. Du khách có thể khám phá cố đô Huế với những công trình kiến trúc cổ kính, Hội An yên bình với những con phố đèn lồng, hay chiêm ngưỡng vẻ đẹp hùng vĩ của đèo Hải Vân. Đà Nẵng với bãi biển Mỹ Khê quyến rũ, Quảng Bình với động Phong Nha kỳ vĩ, và Nha Trang với biển xanh cát trắng cũng là những điểm đến không thể bỏ qua.</p>
+
+        <p>Đăng ký tour du lịch miền Trung cùng ChipTrip, Quý khách sẽ có cơ hội trải nghiệm những hành trình thú vị qua các điểm đến nổi bật như Huế, Đà Nẵng, Hội An, Quảng Bình, Nha Trang,... Để chuẩn bị hành trình thật suôn sẻ, mời Quý khách tham khảo Kinh nghiệm du lịch miền Trung.</p>
+    </div>
+
+    <!-- ################################# MAIN CONTENT #################################-->
+     <!-- Sidebar -->
+    <main class="container main-content">
+        <aside class="sidebar">
+            <h3>BỘ LỌC TÌM KIẾM</h3>
+            <form id="filterForm">
+              <label>Ngân sách:</label>
+              <div class="toggle-buttons" data-group="budget" data-single="true">
+                <div class="toggle-btn" data-value="under5">Dưới 5 triệu</div>
+                <div class="toggle-btn" data-value="5to10">Từ 5 - 10 triệu</div>
+                <div class="toggle-btn" data-value="10to20">Từ 10 - 20 triệu</div>
+                <div class="toggle-btn" data-value="over20">Trên 20 triệu</div>
+              </div>
+          
+              <label>Điểm khởi hành:</label>
+              <select class="sel">
+                <option>Tất cả</option>
+                <option>TP. HCM</option>
+                <option>Hà Nội</option>
+                <option>Thái Bình</option>
+              </select>
+
+              <label>Điểm đến:</label>
+              <select class="sel">
+                <option>Tất cả</option>
+                <option>TP. HCM</option>
+                <option>Hà Nội</option>
+                <option>Thái Bình</option>
+              </select>          
+              <label>Dòng tour:</label>
+              <div class="toggle-buttons" data-group="type" data-single="true">
+                <div class="toggle-btn" data-value="vip">Cao cấp</div>
+                <div class="toggle-btn" data-value="standard">Tiêu chuẩn</div>
+                <div class="toggle-btn" data-value="budget">Tiết kiệm</div>
+                <div class="toggle-btn" data-value="hotdeal">Giá tốt</div>
+              </div>
+
+              <button type="submit">Áp dụng</button>
+            </form>
+        </aside>
+        <!-- Tour-list -->
+        <section class="tour-list">
+              <div class="tour-card">
+                <img src="/img/info/des_banner/dalat.png" alt="Tour Đà Lạt">
+                <div class="tour-info">
+                  <div>
+                    <h3>Đà Lạt</h3>
+                    <div class="tour-details">
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-ticket"></i></span>
+                        <span>Mã tour: NDDALAT-456</span>
+                      </div>
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        <span> Thời gian: 4N3D</span>
+                      </div>
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Khởi hành: Hà Nội</span>
+                      </div>
+                    </div>
+                    <div class="tour-dates">
+                        <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>Ngày khởi hành:</span>
+                      <button class="nav-btn">←</button>
+                          <button class="date-btn">24/04</button>
+                          <button class="date-btn">30/04</button>
+                          <button class="date-btn">01/05</button>
+                          <button class="date-btn">08/05</button>
+                      <button class="nav-btn">→</button>
+                    </div>
+                  </div>
+                  <div style="text-align: left;">Giá từ:</div>
+                  <div class="tour-meta">
+                    <div class="price">4.990.000 <span>đ</span></div>
+                    <button><a href="#">Xem chi tiết</a></button>
+                  </div>
+                </div>
+                <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiêu chuẩn</div>
+              </div>
+              <div class="tour-card">
+                <img src="/img/info/des_banner/danang.png" alt="Tour Đà Nẵng">
+                <div class="tour-info">
+                  <div>
+                    <h3>Đà Nẵng</h3>
+                    <div class="tour-details">
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-ticket"></i></span>
+                        <span>Mã tour: NDDANANG-3211</span>
+                      </div>
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        <span> Thời gian: 4N3D</span>
+                      </div>
+                      <div class="detail-item">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Khởi hành: Hà Nội</span>
+                      </div>
+                    </div>
+                    <div class="tour-dates">
+                        <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>Ngày khởi hành:</span>
+                      <button class="nav-btn">←</button>
+                          <button class="date-btn">24/04</button>
+                          <button class="date-btn">30/04</button>
+                          <button class="date-btn">01/05</button>
+                          <button class="date-btn">08/05</button>
+                      <button class="nav-btn">→</button>
+                    </div>
+                  </div>
+                  <div style="text-align: left;">Giá từ:</div>
+                  <div class="tour-meta">
+                    <div class="price">3.990.000 <span>đ</span></div>
+                    <button><a href="#">Xem chi tiết</a></button>
+                  </div>
+                </div>
+                <div class="tag"><i class="fa-solid fa-piggy-bank"></i>Tiết kiệm</div>
+              </div>
+        </section>
+    </main>
+    
+    <script src="js/des.js"></script>
+
+    <!-- ################################# FOOTER ################################# -->
+    <div class="footer-container"></div>
+<!-- Footer -->
+    <footer class="footer">
+      <div class="footer-section">
+        <h4>Liên hệ</h4>
+        <p>235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+        <p>Từ 7:00 - 17:30 hằng ngày</p>
+        <p>Từ 7:00 - 15:00 Chủ Nhật</p>
+        <hr style="width: 80%; margin: 10px 0;" />
+        <p>Hỗ trợ khách hàng qua hotline 24/7</p>
+        <p>(+84) 034 958 0476</p>
+        <p>(+84) 034 958 0416</p>
+        <div class="social-icons">
+          <img src="img/footer/social/face.svg" />
+          <img src="img/footer/social/ins.svg" />
+          <img src="img/footer/social/messenger.svg" />
+          <img src="img/footer/social/tiktok.svg" />
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Thông tin</h4>
+        <ul>
+          <li><a href="about.html" target="_blank">Giới thiệu</li></a>
+          <li><a href="news.html" target="_blank">Tin tức</li></a>
+          <li><a href="contact.html" target="_blank">Liên Hệ</li></a>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Dịch vụ</h4>
+        <strong><a href="des-domestic.html">Du lịch trong nước</a></strong>
+        <ul>
+          <li><a href="destinations/sub_domestic/mienbac.html">Miền Bắc</li></a>
+          <li><a href="destinations/sub_domestic/mientrung.html">Miền Trung</li></a>
+          <li><a href="destinations/sub_domestic/miennam.html">Miền Nam</li></a>
+        </ul>
+        <strong><a href="des-oversea.html">Du lịch nước ngoài</a></strong>
+        <ul>
+          <li><a href="destinations/sub_overseas/europe.html">Châu Âu</li></a>
+          <li><a href="destinations/sub_overseas/asia.html">Châu Á</li></a>
+          <li><a href="destinations/sub_overseas/americas.html">Châu Mỹ</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Đăng ký để nhận tin từ chúng tôi:</h4>
+        <div class="subscribe-box">
+          <input id="email-input" type="email" placeholder="Your email" />
+          <button id="submit-button" style="background: none; border: none; padding: 0;">
+            <img src="img/footer/send.svg" alt="Gửi" style="width: 24px; height: 24px;">
+          </button>
+        </div>
+        <div id="message" style="margin-top: 8px; font-size: 14px;"></div>
+        <script src="js/footer.js"></script>
+        <h4>Chấp nhận thanh toán</h4>
+        <div class="payment-icons">
+          <img src="img/footer/icon.png" />
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/responsive.js"></script>
+</body>
+</html>

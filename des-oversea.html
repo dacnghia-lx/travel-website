@@ -23,11 +23,15 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style-des-domestic.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>ChipTrip - Du lịch nước ngoài</title>
 </head>
 <body>
   <header>
     <div><img class="logo" src="img/logo.svg" alt="logo" /></div>
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
     <nav id="navbar">
       <ul class="nav_links">
         <li><a href="./about.html">Giới thiệu</a></li>
@@ -107,8 +111,6 @@
                 <option>Châu Âu</option>
                 <option>Châu Mỹ</option>
               </select>
-              <label>Ngày đi:</label>
-              <input type="date" class="sel">
               <label>Dòng tour:</label>
               <div class="toggle-buttons" data-group="type" data-single="true">
                 <div class="toggle-btn" data-value="vip">Cao cấp</div>
@@ -517,59 +519,65 @@
     <!-- ################################# FOOTER ################################# -->
     <div class="footer-container"></div>
     <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-section">
-      <h4>Liên hệ</h4>
-      <p>235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
-      <p>Từ 7:00 - 17:30 hằng ngày</p>
-      <p>Từ 7:00 - 15:00 Chủ Nhật</p>
-      <hr style="width: 80%; margin: 10px 0;" />
-      <p>Hỗ trợ khách hàng qua hotline 24/7</p>
-      <p>(+84) 034 958 0476</p>
-      <p>(+84) 034 958 0416</p>
-      <div class="social-icons">
-        <img src="img/footer/social/face.svg" />
-        <img src="img/footer/social/ins.svg" />
-        <img src="img/footer/social/messenger.svg" />
-        <img src="img/footer/social/tiktok.svg" />
+    <footer class="footer">
+      <div class="footer-section">
+        <h4>Liên hệ</h4>
+        <p>235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+        <p>Từ 7:00 - 17:30 hằng ngày</p>
+        <p>Từ 7:00 - 15:00 Chủ Nhật</p>
+        <hr style="width: 80%; margin: 10px 0;" />
+        <p>Hỗ trợ khách hàng qua hotline 24/7</p>
+        <p>(+84) 034 958 0476</p>
+        <p>(+84) 034 958 0416</p>
+        <div class="social-icons">
+          <img src="img/footer/social/face.svg" />
+          <img src="img/footer/social/ins.svg" />
+          <img src="img/footer/social/messenger.svg" />
+          <img src="img/footer/social/tiktok.svg" />
+        </div>
       </div>
-    </div>
-    <div class="footer-section">
-      <h4>Thông tin</h4>
-      <ul>
-        <li><a href="about.html" target="_blank">Giới thiệu</li></a>
-        <li><a href="news.html" target="_blank">Tin tức</li></a>
-        <li><a href="contact.html" target="_blank">Liên Hệ</li></a>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Dịch vụ</h4>
-      <strong><a href="des-domestic.html">Du lịch trong nước</a></strong>
-      <ul>
-        <li><a href="destinations/sub_domestic/mienbac.html">Miền Bắc</li></a>
-        <li><a href="destinations/sub_domestic/mientrung.html">Miền Trung</li></a>
-        <li><a href="destinations/sub_domestic/miennam.html">Miền Nam</li></a>
-      </ul>
-      <strong><a href="des-overseas.html">Du lịch nước ngoài</a></strong>
-      <ul>
-        <li><a href="destinations/sub_overseas/europe.html">Châu Âu</li></a>
-        <li><a href="destinations/sub_overseas/asia.html">Châu Á</li></a>
-        <li><a href="destinations/sub_overseas/americas.html">Châu Mỹ</li></a>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <h4>Đăng ký để nhận tin từ chúng tôi:</h4>
-      <div class="subscribe-box">
-        <input type="email" placeholder="Your email" />
-        <img src="img/footer/send.svg"/>
+      <div class="footer-section">
+        <h4>Thông tin</h4>
+        <ul>
+          <li><a href="about.html" target="_blank">Giới thiệu</li></a>
+          <li><a href="news.html" target="_blank">Tin tức</li></a>
+          <li><a href="contact.html" target="_blank">Liên Hệ</li></a>
+        </ul>
       </div>
-      <h4>Chấp nhận thanh toán</h4>
-      <div class="payment-icons">
-        <img src="img/footer/icon.png" />
+      <div class="footer-section">
+        <h4>Dịch vụ</h4>
+        <strong><a href="des-domestic.html">Du lịch trong nước</a></strong>
+        <ul>
+          <li><a href="destinations/sub_domestic/mienbac.html">Miền Bắc</li></a>
+          <li><a href="destinations/sub_domestic/mientrung.html">Miền Trung</li></a>
+          <li><a href="destinations/sub_domestic/miennam.html">Miền Nam</li></a>
+        </ul>
+        <strong><a href="des-oversea.html">Du lịch nước ngoài</a></strong>
+        <ul>
+          <li><a href="destinations/sub_overseas/europe.html">Châu Âu</li></a>
+          <li><a href="destinations/sub_overseas/asia.html">Châu Á</li></a>
+          <li><a href="destinations/sub_overseas/americas.html">Châu Mỹ</li></a>
+        </ul>
       </div>
-    </div>
+  
+      <div class="footer-section">
+        <h4>Đăng ký để nhận tin từ chúng tôi:</h4>
+        <div class="subscribe-box">
+          <input id="email-input" type="email" placeholder="Your email" />
+          <button id="submit-button" style="background: none; border: none; padding: 0;">
+            <img src="img/footer/send.svg" alt="Gửi" style="width: 24px; height: 24px;">
+          </button>
+        </div>
+        <div id="message" style="margin-top: 8px; font-size: 14px;"></div>
+        <script src="js/footer.js"></script>
+        <h4>Chấp nhận thanh toán</h4>
+        <div class="payment-icons">
+          <img src="img/footer/icon.png" />
+        </div>
+      </div>
+    </footer>
   </footer>
-    <script src="js/des.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/responsive.js"></script>
 </body>
 </html>

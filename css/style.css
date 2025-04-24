@@ -392,32 +392,39 @@ header {
 
 /* Layout cho các mục tin tức */
 .news-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cột */
-    gap: 30px; /* Khoảng cách giữa các mục */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
 }
 
 .news-item {
+    width: 48%;
+    min-height: 200px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     display: flex;
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex-direction: row;      /* Đổi từ column sang row để ảnh bên trái */
+    align-items: flex-start;  /* Căn trên */
+    padding: 18px 16px;
+    box-sizing: border-box;
 }
 
-/* Ảnh tin tức */
 .news-item img {
-    width: 40%; /* Chiếm 40% chiều rộng */
-    height: auto;
+    width: 45%;              /* Ảnh chiếm 45% bên trái */
+    height: 180px;
     object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;      /* Thêm khoảng cách với phần nội dung */
 }
 
-/* Nội dung tin tức */
 .news-info {
-    padding: 20px;
+    width: 55%;              /* Nội dung chiếm 55% bên phải */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .news-info h2 {
@@ -427,9 +434,10 @@ header {
 }
 
 .news-info p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 4; /* Số dòng muốn hiển thị */
 }
 
 .news-info a {

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: #3674B5;
+    --sub--color: #73B2D3;
+    --text-color: #000000;
+    --background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    padding: 0;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li {
+    position: relative;
+    padding: 0 20px;
+}
+
+.nav_links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 10px 20px;
+}
+
+.nav_links a:hover {
+    color: #0088a9;
+}
+
+/* Style cho submenu */
+.sub_menu, .sub_menu_2 {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 220px;
+    opacity: 0;
+    display: none;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    left: 0;
+    top: 100%;
+    padding: 8px 0;
+}
+
+/* Hiển thị submenu khi hover */
+.nav_links li:hover > .sub_menu,
+.sub_menu li:hover > .sub_menu_2 {
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+}
+
+.sub_menu ul, .sub_menu_2 ul {
+    list-style: none;
+}
+
+.sub_menu li, .sub_menu_2 li {
+    position: relative;
+    padding: 0;
+}
+
+.sub_menu a, .sub_menu_2 a {
+    padding: 12px 20px;
+    font-size: 14px;
+    display: block;
+    border-left: 3px solid transparent;
+}
+
+.sub_menu a:hover, .sub_menu_2 a:hover {
+    background-color: #b8bccc;
+    border-left: 3px solid #0088a9;
+}
+
+/* Vị trí cho submenu cấp 2 */
+.sub_menu_2 {
+    left: 100%;
+    top: 0;
+}
+
+.sub_menu li > a:after {
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+}
+.hero-bg {
+    position: relative;
+    height: 300px;
+    background-image: url("../img/news1/backhead.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+  }
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* 40% tối*/
+    z-index: 2;
+  }
+  .hero-content {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Thêm bóng cho chữ */
+    z-index: 3;
+  }
+  
+  .hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+  }
+  
+  /* thanh điều hướng */
+  .breadcrumb {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .breadcrumb a:hover {
+    color: #a3d5f7;
+  }
+
+
+.contact {
+    display: flex;
+    flex-direction: row; /* Xếp theo cột */
+}
+/* ################################# ROW 1 #################################*/
+.big_infor{
+    
+    width: 62%;
+    height: 100%;
+    margin: 60px 10px 60px 30px;
+    display:grid;
+    flex-direction: column; /* Xếp theo cột */
+
+
+}
+.add {
+
+    width: 38%;
+}
+
+.infor {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+/* ################################# ROW 2 #################################*/
+.form-row2 {
+    display: inline-block;
+    gap: 18px;
+  }
+.form-group {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin: 25px 0PX 10px;
+  }
+  
+input {
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 330px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+/* ################################# ROW 3 #################################*/
+#phone{
+    width: 91%;
+}
+
+
+#ib{
+    width: 91%;
+}
+.btn{
+    width: 91%;
+    background-color:#0088a9;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    font-size: 15px;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3674B5;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+
+/* ################################# COLUMN 2 #################################*/
+.add{
+    margin:100px 30px 0px 100px;
+    font-weight: bold;
+    height: 350px;
+}
+
+.add_rcm1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.add_contact {
+    color:#0088a9;
+    font-size: 18px;
+    margin: 15px 0px ;
+}
+
+.add img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.footer {
+    background-color: #a3d5f7;
+    color: #000;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px 20px 0px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section li {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+  .footer-section li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons img,
+  .payment-icons img {
+    width: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .subscribe-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .subscribe-box img {
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .footer-container {
+    background-color: #0a2c52;
+    height: 40px;
+    width: 100%; /* Đảm bảo chiều rộng 100% */
+    margin-top: -50px; /* Thêm khoảng cách giữa footer và nội dung */
+  }
+  
+  .payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .payment-icons img {
+    margin: 0 5px;
+    height: 100px;
+    width: 200px;
+}
