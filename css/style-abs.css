@@ -130,6 +130,132 @@ header {
   font-size: 12px;
 }
 
+/* ############### SIMPLE RESPONESIVE ###################*/
+/*(Phone)*/
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-bg {
+    height: 200px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .breadcrumb {
+    font-size: 10px;
+  }
+
+  /* Main Section */
+  .left h1 {
+    font-size: 24px;
+  }
+
+  .left h4 {
+    font-size: 20px;
+  }
+
+  .left p {
+    font-size: 12px;
+  }
+
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-icon i {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-left: 50%;  
+  }
+
+  .container img {
+    max-width: 100%;
+  }
+  /* Travel Section */
+  .travel-section {
+    height: 400px;
+  }
+  .travel-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Lớp overlay màu đen, độ mờ 40% */
+    z-index: 1;
+  }
+  .travel-content {
+    padding: 20px;
+    z-index: 2;
+  }
+  .travel-bg {
+    z-index: 1;
+  }
+
+  .travel-content h4 {
+    font-size: 20px;
+    padding-left: 100px;
+  }
+
+  .travel-content h1 {
+    font-size: 28px;
+    color: aliceblue !important;
+    text-shadow: none;
+  }
+
+  .travel-content p {
+    font-size: 14px;
+    color: aliceblue !important;
+    text-shadow: none;
+  }
+
+  /* Expert Section */
+  .expert-header h2 {
+    font-size: 24px;
+  }
+
+  .expert-header .sub-title {
+    font-size: 20px;
+  }
+
+  .expert-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .expert-img {
+    height: 200px;
+  }
+
+  .expert-item h3 {
+    font-size: 16px;
+  }
+
+  .expert-item p {
+    font-size: 12px;
+  }
+
+  /* Review Section */
+  .review-header h2 {
+    font-size: 24px;
+  }
+
+  .review-header .sub-title {
+    font-size: 20px;
+  }
+  .review-content .location {
+    font-size: 12px !important;
+  }
+}
+
 /* ############################## HERO #################################### */
 .hero-bg {
   position: relative;
@@ -399,6 +525,141 @@ header {
 
 .expert-item .social-icons a:hover {
   color: #73b2d3;
+}
+
+/* ############################## REVIEW SECTION #################################### */
+.review-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.review-header {
+  margin-bottom: 40px;
+}
+
+.review-header .sub-title {
+  color: #f9a825;
+  font-family: "Dancing Script";
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.review-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.review-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.review-slide {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.review-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.review-content {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.review-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+  font-style: italic;
+}
+
+.rating {
+  margin: 15px 0;
+}
+
+.rating i {
+  color: #f9a825;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.review-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.location {
+  font-size: 14px !important;
+  color: #777 !important;
+  font-style: normal !important;
+}
+
+/* Navigation Dots */
+.review-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background-color: #73b2d3;
+}
+
+/* Navigation Arrows */
+.review-prev, .review-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  color: #73b2d3;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review-prev {
+  left: 10px;
+}
+
+.review-next {
+  right: 10px;
+}
+
+.review-prev:hover, .review-next:hover {
+  background-color: #73b2d3;
+  color: white;
 }
 
 /* #################################### FOOTER #################################### */
