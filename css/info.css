@@ -232,7 +232,8 @@ header {
 }
 
 .slide img {
-    width: 100%;
+    min-width: 600px; /* Giới hạn chiều rộng tối đa */
+    min-height: 400px;
     border-radius: 8px;
 }
 
