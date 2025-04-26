@@ -1,10 +1,3 @@
-function homepage() {
-var home = document.querySelector('.logo');
-    home.addEventListener('click', function() {
-    window.location.href = '/index.html';
-    });
-}
-homepage();
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -79,7 +72,7 @@ function bookingBoxHandler() {
 
             // Lấy ảnh bìa (slide đầu tiên)
             const firstSlideImg = document.querySelector('.slideshow-container .slide img');
-            const tourImage = firstSlideImg ? firstSlideImg.getAttribute('src') : '';
+            const tourImage = firstSlideImg ? firstSlideImg.getAttribute('src') : './';
 
             // Lưu vào localStorage
             localStorage.setItem('tour_image', tourImage);
@@ -90,7 +83,7 @@ function bookingBoxHandler() {
             localStorage.setItem('tour_total_price', totalPrice);
 
             // Chuyển sang trang checkout
-            window.location.href = '/checkout.html';
+            window.location.href = '../../checkout.html';
         });
     }
 }

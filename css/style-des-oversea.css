@@ -134,7 +134,7 @@ header {
 .hero-bg {
   position: relative;
   height: 300px;
-  background-image: url("/img/info/des_banner/banner_des_dos.png");
+  background-image: url("../img/info/des_banner/banner_des_dos.png");
   background-size: cover;
   background-position: center;
   display: flex;
