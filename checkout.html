@@ -80,7 +80,7 @@
                     <label for="phone">Số điện thoại *</label>
                     <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
                 </div>
-                <h3>Hãy cho chúng tôi biết Quý khách cần gì?</h3>
+                <h3 id="special-request-title">Hãy cho chúng tôi biết Quý khách có nhu cầu gì?</h3>
                 <div class="checkbox-group">
                     <label><input type="checkbox"> Hút thuốc</label>
                     <label><input type="checkbox"> Phòng tầng cao</label>
@@ -90,14 +90,14 @@
                     <label><input type="checkbox"> Phụ nữ có thai</label>
                 </div>
                 <a href="#" class="special-request">+ Thêm yêu cầu đặc biệt</a>
-                <textarea name="" id=""></textarea>
+                <textarea name="" id="special-request-textarea" style="display:none;"></textarea>
                 <button type="submit" class="continue-btn">Tiếp tục</button>
             </form>
         </div>
         <div class="tour-info">
             <h2>Thông tin đặt tour</h2>
             <div class="tour-summary">
-                <img id="tour-image" src="img/info//des_banner/sapa.jpg" alt="Tour">
+                <img id="tour-image" src="img/info/des_banner/sapa.jpg" alt="Tour">
                 <div>
                     <h3 id="tour-name">Tên tour</h3>
                     <p>Mã tour: <span id="tour-code"></span></p>

@@ -33,5 +33,6 @@ document.getElementById('filterForm').addEventListener('submit', function(e) {
     if (departure !== 'Tất cả' && card.dataset.departure !== departure) show = false;
     if (destination !== 'Tất cả' && card.dataset.destination !== destination) show = false;
     card.style.display = show ? '' : 'none';
+  });
 });
-});
+

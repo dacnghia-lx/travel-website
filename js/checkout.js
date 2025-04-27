@@ -80,6 +80,17 @@ function setupPaymentEvents() {
     };
 }
 
+document.querySelector('.special-request').addEventListener('click', function(e) {
+    e.preventDefault();
+    const textarea = document.getElementById('special-request-textarea');
+    if (textarea.style.display === 'block') {
+      textarea.style.display = 'none';
+    } else {
+      textarea.style.display = 'block';
+    }
+  }
+);
+
 // Gọi các function chính
 fillCheckoutTourInfo();
 setupPaymentEvents();
