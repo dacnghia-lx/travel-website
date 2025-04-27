@@ -291,6 +291,7 @@ header {
     justify-content: center;
     gap: 30px;
     background-color: var(--sub--color);
+    background-image: url('../../img/about/footer-bg.png');
     width: 100%;
     padding: 50px 50px;
 }

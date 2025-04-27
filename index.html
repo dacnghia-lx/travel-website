@@ -27,7 +27,7 @@
 </head>
 <body>
   <header>
-    <div><img class="logo" src="img/logo.svg" alt="logo" /></div>
+    <div><a href="./index.html"><img class="logo" src="./img/logo.svg" alt="logo"/></a></div>
     <div class="menu-toggle" id="menu-toggle">
         <i class="fa fa-bars"></i>
       </div>
@@ -99,253 +99,51 @@
     <section class="destinations">
         <h1>TOUR NỔI BẬT - ĐỪNG BỎ LỠ</h1>
         <p>Khám phá những điểm đến tuyệt vời và trải nghiệm những chuyến đi đáng nhớ với ChipTrip!</p>
-        <div class="carousel-container">
-            <button class="carousel-btn prev" onclick="plusSlides(-1)">&#10094;</button>
-            <div class="destinations-content">
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/tokyo.jpg" alt="Vịnh Tokyo">
-                    <div class="title">
-                        <h2>Tokyo - Cổ xưa và hiện đại</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>25.000.000đ</span>
-                    </div>
-                    <a href="destinations/oversea/tokyo.html" class="book-btn">Đặt tour</a>
+        <div class="destinations-content">
+            <div class="destination-info">
+                <img src="../../img/info/des_banner/tokyo.jpg" alt="Vịnh Tokyo">
+                <div class="title">
+                    <h2>Tokyo - Cổ xưa và hiện đại</h2>
                 </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/destinations/halong.jpg" alt="Vịnh Hạ Long">
-                    <div class="title">
-                        <h2>Vịnh Hạ Long</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>4.500.000đ</span>
-                    </div>
-                    <a href="destinations/domestic/vinh_ha_long.html" class="book-btn">Đặt tour</a>
+                <div>
+                    <p>Khởi hành: Hà Nội</p>
                 </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/paris.jpg" alt="Tour Paris">
-                    <div class="title">
-                        <h2>Paris - Kinh đô ánh sáng</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>45.000.000đ</span>
-                    </div>
-                    <a href="destinations/oversea/paris.html" class="book-btn">Đặt tour</a>
+                <div class="price">
+                    <p>Giá từ:</p>
+                    <span>25.000.000đ</span>
                 </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/rio.jpg" alt="Vịnh Tokyo">
-                    <div class="title">
-                        <h2>Rio de Janeiro - Thành phố lễ hội</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>70.000.000đ</span>
-                    </div>
-                    <a href="destinations/oversea/rio.html" class="book-btn">Đặt tour</a>
-                </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/hagiang.png" alt="Vịnh Hạ Long">
-                    <div class="title">
-                        <h2>Hà Giang - Lũng Cú - Đồng Văn</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>3.990.000đ</span>
-                    </div>
-                    <a href="destinations/domestic/hagiang-lungcu-dongvan.html" class="book-btn">Đặt tour</a>
-                </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/bangkok.jpg" alt="Tour Bangkok">
-                    <div class="title">
-                        <h2>Bangkok - Thành phố của những nụ cười</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>15.000.000đ</span>
-                    </div>
-                    <a href="destinations/oversea/bangkok.html" class="book-btn">Đặt tour</a>
-                </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/london.jpg" alt="Vịnh Tokyo">
-                    <div class="title">
-                        <h2>London - Thành phố sương mù</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>55.000.000đ</span>
-                    </div>
-                    <a href="destinations/oversea/london.html" class="book-btn">Đặt tour</a>
-                </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/hagiang.png" alt="Vịnh Hạ Long">
-                    <div class="title">
-                        <h2>Cao Bằng - Thác Bản Giốc - Ba Bề</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>4.290.000đ</span>
-                    </div>
-                    <a href="destinations/domestic/cao_bang_thac_ban_gioc_be_be.html" class="book-btn">Đặt tour</a>
-                </div>
-                <div class="destination-info carousel-slide">
-                    <img src="img/info/des_banner/losangeles.jpg" alt="Tour Bangkok">
-                    <div class="title">
-                        <h2>Los Angeles - Thành phố thiên thần</h2>
-                    </div>
-                    <div>
-                        <p>Khởi hành: Hà Nội</p>
-                    </div>
-                    <div class="price">
-                        <p>Giá từ:</p>
-                        <span>65.000.000đ</span>
-                    </div>
-                    <a href="destinations/oversea/los_angeles.html" class="book-btn">Đặt tour</a>
-                </div>
+                <a href="../../destinations/oversea/tokyo.html" class="book-btn">Đặt tour</a>
             </div>
-            <button class="carousel-btn next" onclick="plusSlides(1)">&#10095;</button>
-        </div>
-        <div class="carousel-dots" style="text-align:center; margin-top:10px;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
+            <div class="destination-info">
+                <img src="../../img/destinations/halong.jpg" alt="Vịnh Hạ Long">
+                <div class="title">
+                    <h2>Vịnh Hạ Long</h2>
+                </div>
+                <div>
+                    <p>Khởi hành: Hà Nội</p>
+                </div>
+                <div class="price">
+                    <p>Giá từ:</p>
+                    <span>4.500.000đ</span>
+                </div>
+                <a href="../../destinations/domestic/vinh_ha_long.html" class="book-btn">Đặt tour</a>
+            </div>
+            <div class="destination-info">
+                <img src="../../img/info/des_banner/paris.jpg" alt="Tour Paris">
+                <div class="title">
+                    <h2>Paris - Kinh đô ánh sáng</h2>
+                </div>
+                <div>
+                    <p>Khởi hành: Hà Nội</p>
+                </div>
+                <div class="price">
+                    <p>Giá từ:</p>
+                    <span>45.000.000đ</span>
+                </div>
+                <a href="../../destinations/oversea/paris.html" class="book-btn">Đặt tour</a>
+            </div>
         </div>
     </section>
-    <style>
-        .carousel-container {
-            position: relative;
-            max-width: 100%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .destinations-content {
-            width: 100%;
-            display: flex;
-            overflow: hidden;
-            justify-content: center;
-        }
-        .carousel-slide {
-            display: none;
-            min-width: 300px;
-            max-width: 350px;
-            margin: 0 10px;
-            flex-shrink: 0;
-            transition: transform 0.5s;
-        }
-        .carousel-btn {
-            background-color: rgba(0,0,0,0.3);
-            border: none;
-            color: white;
-            font-size: 2rem;
-            cursor: pointer;
-            padding: 8px 16px;
-            border-radius: 50%;
-            z-index: 2;
-            transition: background 0.2s;
-        }
-        .carousel-btn:hover {
-            background-color: rgba(0,0,0,0.6);
-        }
-        .carousel-btn.prev {
-            margin-right: 10px;
-        }
-        .carousel-btn.next {
-            margin-left: 10px;
-        }
-        .carousel-dots .dot {
-            height: 12px;
-            width: 12px;
-            margin: 0 3px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.3s;
-            cursor: pointer;
-        }
-        .carousel-dots .dot.active {
-            background-color: #717171;
-        }
-        @media (max-width: 900px) {
-            .carousel-slide {
-                min-width: 90vw;
-                max-width: 95vw;
-            }
-        }
-    </style>
-    <script>
-        // Show 3 cards at a time, slide by 1
-        let slideIndex = 0;
-        const cardsToShow = 3;
-
-        function showSlides(n) {
-            let slides = document.getElementsByClassName("carousel-slide");
-            let dots = document.getElementsByClassName("dot");
-            let total = slides.length;
-
-            // Vòng lặp slideIndex
-            if (n < 0) slideIndex = total - cardsToShow;
-            else if (n > total - cardsToShow) slideIndex = 0;
-            else slideIndex = n;
-
-            // Hide all slides
-            for (let i = 0; i < total; i++) {
-                slides[i].style.display = "none";
-            }
-            // Show the current 3 slides
-            for (let i = slideIndex; i < slideIndex + cardsToShow && i < total; i++) {
-                slides[i].style.display = "block";
-            }
-            // Dots
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            if (dots[slideIndex]) dots[slideIndex].className += " active";
-        }
-
-        function plusSlides(n) {
-            showSlides(slideIndex + n);
-        }
-
-        function currentSlide(n) {
-            showSlides(n - 1);
-        }
-
-        // Initialize on DOMContentLoaded
-        document.addEventListener("DOMContentLoaded", function() {
-            showSlides(0);
-        });
-    </script>
     <!--End of Destinations-->
     <div class="divider"></div>
     <!--News-->
