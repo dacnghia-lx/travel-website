@@ -12,8 +12,20 @@ document.querySelectorAll('.toggle-buttons').forEach(group => {
   });
 });
 
+//Xóa lớp active khỏi tất cả các toggle buttons
+const resetFilterBtn = document.getElementById('resetFilterBtn');
+  if (resetFilterBtn) {
+    resetFilterBtn.addEventListener('click', function() {
+      const toggleButtons = document.querySelectorAll('#filterForm .toggle-btn');
+      toggleButtons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+    });
+  }
+
+
 document.getElementById('filterForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+  e.preventDefault(); // ngăn tải lại trang
   const form = e.target;
   const selects = form.querySelectorAll('.sel');
   const departure = selects[0] ? selects[0].value : '';

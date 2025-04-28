@@ -280,7 +280,20 @@ header {
   border-color: #005fa3;
 }
 
-/* Đảm bảo các input và select có kích thước đồng nhất */
+#resetFilterBtn {
+  background-color: #f0f8ff;
+  color: #0074cc;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+  transition: color 0.3s;
+}
+
+#resetFilterBtn:hover {
+  color: #005fa3;
+}
+
 .sidebar select,
 .sidebar input,
 .sidebar button {
