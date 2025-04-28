@@ -443,6 +443,25 @@ header {
   font-size: 12px;
 }
 
+.load-more-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #004c99;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #003a77;
+}
+
 /* #################################### FOOTER #################################### */
 .footer {
   background-color: #a3d5f7;
@@ -517,7 +536,7 @@ header {
   background-color: #0a2c52;
   height: 40px;
   width: 100%; /* Đảm bảo chiều rộng 100% */
-  margin-top: -50px; /* Thêm khoảng cách giữa footer và nội dung */
+  margin-top: -10px; /* Thêm khoảng cách giữa footer và nội dung */
 }
 
 .payment-icons {
