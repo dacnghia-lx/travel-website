@@ -29,9 +29,14 @@ namespace BaoCaoCuoiKy
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main_Admin));
             this.panel_container = new System.Windows.Forms.Panel();
             this.panelSidebar = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnManageAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnReport = new Guna.UI2.WinForms.Guna2Button();
+            this.btnManageInvoice = new Guna.UI2.WinForms.Guna2Button();
+            this.btnManageStaff = new Guna.UI2.WinForms.Guna2Button();
             this.lblInfoName = new System.Windows.Forms.Label();
             this.lblInfoID = new System.Windows.Forms.Label();
+            this.ImgAdmin = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblMethodSidebar = new System.Windows.Forms.Label();
             this.btnManageMenu = new Guna.UI2.WinForms.Guna2Button();
             this.panelHeader = new System.Windows.Forms.Panel();
@@ -46,16 +51,9 @@ namespace BaoCaoCuoiKy
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.btnManageAdmin = new Guna.UI2.WinForms.Guna2Button();
-            this.btnReport = new Guna.UI2.WinForms.Guna2Button();
-            this.btnManageInvoice = new Guna.UI2.WinForms.Guna2Button();
-            this.btnManageStaff = new Guna.UI2.WinForms.Guna2Button();
-            this.ImgAdmin = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnManageMenu = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelSidebar.SuspendLayout();
-            this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAdmin)).BeginInit();
+            this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,30 +91,30 @@ namespace BaoCaoCuoiKy
             this.panelSidebar.Size = new System.Drawing.Size(240, 969);
             this.panelSidebar.TabIndex = 9;
             // 
-            // guna2Button1
+            // btnManageAdmin
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
-            this.guna2Button1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 565);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(234, 68);
-            this.guna2Button1.TabIndex = 20;
-            this.guna2Button1.Text = "Quản lý Admin";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.TextOffset = new System.Drawing.Point(10, 0);
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnManageAdmin.Animated = true;
+            this.btnManageAdmin.BorderColor = System.Drawing.Color.Transparent;
+            this.btnManageAdmin.BorderRadius = 10;
+            this.btnManageAdmin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnManageAdmin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnManageAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnManageAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnManageAdmin.FillColor = System.Drawing.Color.Transparent;
+            this.btnManageAdmin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnManageAdmin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnManageAdmin.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnManageAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnManageAdmin.Image")));
+            this.btnManageAdmin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnManageAdmin.Location = new System.Drawing.Point(0, 565);
+            this.btnManageAdmin.Name = "btnManageAdmin";
+            this.btnManageAdmin.Size = new System.Drawing.Size(234, 68);
+            this.btnManageAdmin.TabIndex = 20;
+            this.btnManageAdmin.Text = "Quản lý Admin";
+            this.btnManageAdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnManageAdmin.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnManageAdmin.Click += new System.EventHandler(this.btnManageAdmin_Click);
             // 
             // label3
             // 
@@ -136,16 +134,16 @@ namespace BaoCaoCuoiKy
             this.btnReport.BorderRadius = 10;
             this.btnReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
-            this.btnReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
+            this.btnReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReport.FillColor = System.Drawing.Color.Transparent;
-            this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnReport.ForeColor = System.Drawing.Color.DimGray;
-            this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
+            this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.Color.White;
+            this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
             this.btnReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReport.Location = new System.Drawing.Point(0, 310);
+            this.btnReport.Location = new System.Drawing.Point(-1, 310);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(234, 68);
             this.btnReport.TabIndex = 18;
@@ -161,12 +159,12 @@ namespace BaoCaoCuoiKy
             this.btnManageInvoice.BorderRadius = 10;
             this.btnManageInvoice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnManageInvoice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageInvoice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
-            this.btnManageInvoice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
+            this.btnManageInvoice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnManageInvoice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManageInvoice.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageInvoice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnManageInvoice.ForeColor = System.Drawing.Color.DimGray;
-            this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
+            this.btnManageInvoice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageInvoice.ForeColor = System.Drawing.Color.White;
+            this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnManageInvoice.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnManageInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btnManageInvoice.Image")));
             this.btnManageInvoice.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -186,12 +184,12 @@ namespace BaoCaoCuoiKy
             this.btnManageStaff.BorderRadius = 10;
             this.btnManageStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnManageStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
-            this.btnManageStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
+            this.btnManageStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnManageStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManageStaff.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageStaff.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnManageStaff.ForeColor = System.Drawing.Color.DimGray;
-            this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
+            this.btnManageStaff.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageStaff.ForeColor = System.Drawing.Color.White;
+            this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnManageStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnManageStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStaff.Image")));
             this.btnManageStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -229,6 +227,18 @@ namespace BaoCaoCuoiKy
             this.lblInfoID.Text = "maAdmin";
             this.lblInfoID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // ImgAdmin
+            // 
+            this.ImgAdmin.Image = ((System.Drawing.Image)(resources.GetObject("ImgAdmin.Image")));
+            this.ImgAdmin.ImageRotate = 0F;
+            this.ImgAdmin.InitialImage = ((System.Drawing.Image)(resources.GetObject("ImgAdmin.InitialImage")));
+            this.ImgAdmin.Location = new System.Drawing.Point(55, 59);
+            this.ImgAdmin.Name = "ImgAdmin";
+            this.ImgAdmin.Size = new System.Drawing.Size(113, 110);
+            this.ImgAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImgAdmin.TabIndex = 12;
+            this.ImgAdmin.TabStop = false;
+            // 
             // lblMethodSidebar
             // 
             this.lblMethodSidebar.AutoSize = true;
@@ -247,12 +257,12 @@ namespace BaoCaoCuoiKy
             this.btnManageMenu.BorderRadius = 10;
             this.btnManageMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnManageMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
-            this.btnManageMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(227)))));
+            this.btnManageMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnManageMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManageMenu.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnManageMenu.ForeColor = System.Drawing.Color.DimGray;
-            this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
+            this.btnManageMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageMenu.ForeColor = System.Drawing.Color.White;
+            this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnManageMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnManageMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnManageMenu.Image")));
             this.btnManageMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -285,9 +295,9 @@ namespace BaoCaoCuoiKy
             this.guna2PictureBox2.BorderRadius = 10;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(1, -11);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-3, -2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(144, 115);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(147, 81);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
@@ -316,7 +326,6 @@ namespace BaoCaoCuoiKy
             this.lb_name_admin.TabIndex = 3;
             this.lb_name_admin.Text = "nameAdmin";
             this.lb_name_admin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lb_name_admin.Click += new System.EventHandler(this.lb_name_admin_Click);
             // 
             // btnExitWindow
             // 
@@ -398,157 +407,6 @@ namespace BaoCaoCuoiKy
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 0;
             // 
-            // btnManageAdmin
-            // 
-            this.btnManageAdmin.Animated = true;
-            this.btnManageAdmin.BorderColor = System.Drawing.Color.Transparent;
-            this.btnManageAdmin.BorderRadius = 10;
-            this.btnManageAdmin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageAdmin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnManageAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnManageAdmin.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageAdmin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnManageAdmin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageAdmin.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnManageAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnManageAdmin.Image")));
-            this.btnManageAdmin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageAdmin.Location = new System.Drawing.Point(0, 565);
-            this.btnManageAdmin.Name = "btnManageAdmin";
-            this.btnManageAdmin.Size = new System.Drawing.Size(234, 68);
-            this.btnManageAdmin.TabIndex = 20;
-            this.btnManageAdmin.Text = "Quản lý Admin";
-            this.btnManageAdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageAdmin.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnManageAdmin.Click += new System.EventHandler(this.btnManageAdmin_Click);
-            // 
-            // btnReport
-            // 
-            this.btnReport.Animated = true;
-            this.btnReport.BorderColor = System.Drawing.Color.Transparent;
-            this.btnReport.BorderRadius = 10;
-            this.btnReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReport.FillColor = System.Drawing.Color.Transparent;
-            this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
-            this.btnReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReport.Location = new System.Drawing.Point(-1, 310);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(234, 68);
-            this.btnReport.TabIndex = 18;
-            this.btnReport.Text = "Dashboard";
-            this.btnReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnReport.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
-            // 
-            // btnManageInvoice
-            // 
-            this.btnManageInvoice.Animated = true;
-            this.btnManageInvoice.BorderColor = System.Drawing.Color.Transparent;
-            this.btnManageInvoice.BorderRadius = 10;
-            this.btnManageInvoice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageInvoice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageInvoice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnManageInvoice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnManageInvoice.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageInvoice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageInvoice.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.btnManageInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btnManageInvoice.Image")));
-            this.btnManageInvoice.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageInvoice.Location = new System.Drawing.Point(0, 629);
-            this.btnManageInvoice.Name = "btnManageInvoice";
-            this.btnManageInvoice.Size = new System.Drawing.Size(234, 68);
-            this.btnManageInvoice.TabIndex = 17;
-            this.btnManageInvoice.Text = "Quản lý hoá đơn";
-            this.btnManageInvoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageInvoice.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnManageInvoice.Click += new System.EventHandler(this.btnManageInvoice_Click);
-            // 
-            // btnManageStaff
-            // 
-            this.btnManageStaff.Animated = true;
-            this.btnManageStaff.BorderColor = System.Drawing.Color.Transparent;
-            this.btnManageStaff.BorderRadius = 10;
-            this.btnManageStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnManageStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnManageStaff.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageStaff.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageStaff.ForeColor = System.Drawing.Color.White;
-            this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.btnManageStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStaff.Image")));
-            this.btnManageStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageStaff.Location = new System.Drawing.Point(-2, 500);
-            this.btnManageStaff.Name = "btnManageStaff";
-            this.btnManageStaff.Size = new System.Drawing.Size(234, 68);
-            this.btnManageStaff.TabIndex = 15;
-            this.btnManageStaff.Text = "Quản lý nhân viên";
-            this.btnManageStaff.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageStaff.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnManageStaff.Click += new System.EventHandler(this.btnManageStaff_Click);
-            // 
-            // ImgAdmin
-            // 
-            this.ImgAdmin.Image = ((System.Drawing.Image)(resources.GetObject("ImgAdmin.Image")));
-            this.ImgAdmin.ImageRotate = 0F;
-            this.ImgAdmin.InitialImage = ((System.Drawing.Image)(resources.GetObject("ImgAdmin.InitialImage")));
-            this.ImgAdmin.Location = new System.Drawing.Point(55, 59);
-            this.ImgAdmin.Name = "ImgAdmin";
-            this.ImgAdmin.Size = new System.Drawing.Size(113, 110);
-            this.ImgAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ImgAdmin.TabIndex = 12;
-            this.ImgAdmin.TabStop = false;
-            // 
-            // btnManageMenu
-            // 
-            this.btnManageMenu.Animated = true;
-            this.btnManageMenu.BorderColor = System.Drawing.Color.Transparent;
-            this.btnManageMenu.BorderRadius = 10;
-            this.btnManageMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnManageMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnManageMenu.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageMenu.ForeColor = System.Drawing.Color.White;
-            this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.btnManageMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnManageMenu.Image")));
-            this.btnManageMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageMenu.Location = new System.Drawing.Point(0, 436);
-            this.btnManageMenu.Name = "btnManageMenu";
-            this.btnManageMenu.Size = new System.Drawing.Size(234, 68);
-            this.btnManageMenu.TabIndex = 10;
-            this.btnManageMenu.Text = "Quản lý menu";
-            this.btnManageMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageMenu.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnManageMenu.Click += new System.EventHandler(this.btnManageMenu_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.BorderRadius = 10;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-3, -2);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(147, 81);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 1;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
             // Form_Main_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -568,9 +426,9 @@ namespace BaoCaoCuoiKy
             this.Load += new System.EventHandler(this.Form_Main_Admin_Load);
             this.panelSidebar.ResumeLayout(false);
             this.panelSidebar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgAdmin)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgAdmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
