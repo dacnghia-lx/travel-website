@@ -41,15 +41,11 @@ The Coffee Shop Management project is a comprehensive software solution designed
 
 ## Screenshots 📸
 <img width="1906" height="1065" alt="image" src="https://github.com/user-attachments/assets/e54950df-5e1d-418d-ba63-0c25507a6f16" />
-
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/b68788d9-3d7e-49c8-86b8-4ac04a1b4a3b)
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/11f8377f-977d-41f1-b577-5153bb4a0539)
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/48b2641d-3ac7-42d3-8089-7b3cb6d5c17a)
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/2f73850c-5dab-47c3-bf38-837046d3d083)
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/95c7358e-955f-4fd2-9db5-526da505eb6b)
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/4683f295-2164-4f5b-810d-3f97890ac6a9)
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/09bbad0c-daa4-4a34-a8f7-a14389bb517b)
-![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/0ab9109e-9b2a-49f3-8e44-b7e82bee7d26)
+<img width="1908" height="1064" alt="image" src="https://github.com/user-attachments/assets/a18ab7be-dd2c-4a58-bb6c-725ea95ab895" />
+<img width="1916" height="1068" alt="image" src="https://github.com/user-attachments/assets/3fade488-995a-43f4-95d9-e292125b8f4d" />
+<img width="1900" height="1068" alt="image" src="https://github.com/user-attachments/assets/898111fa-a268-4bf4-93ed-b95e736f0169" />
+<img width="1903" height="1070" alt="image" src="https://github.com/user-attachments/assets/e93337d5-7c2f-4504-b891-9a657900d5bc" />
+<img width="1910" height="1068" alt="image" src="https://github.com/user-attachments/assets/3d4e6c19-f2e9-47e1-bf46-211f2aeeda35" />
 
 ## Installation ✔️
 Before you get started, you need to install the following prerequisites:
