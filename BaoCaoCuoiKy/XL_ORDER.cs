@@ -33,7 +33,7 @@ namespace BaoCaoCuoiKy
                     connection.Open();
                 }
 
-                string selectCommand = "SELECT MaHD FROM HOADON ORDER BY MaHD DESC OFFSET 0 ROWS FETCH FIRST 1 ROW ONLY;";
+                string selectCommand = "SELECT MaHD FROM HOADON ORDER BY LEN(MaHD) DESC, MaHD DESC OFFSET 0 ROWS FETCH FIRST 1 ROW ONLY;";
                 using (SqlCommand command = new SqlCommand(selectCommand, connection))
                 {
                     object result = command.ExecuteScalar();

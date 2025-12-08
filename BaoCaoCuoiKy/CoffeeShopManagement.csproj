@@ -120,12 +120,6 @@
     <None Include="Global.cs.example" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User Control Admin\UC_ADMIN_ADMIN.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control Admin\UC_ADMIN_ADMIN.Designer.cs">
-      <DependentUpon>UC_ADMIN_ADMIN.cs</DependentUpon>
-    </Compile>
     <Compile Include="User Control Admin\UC_ADMIN_ORDER.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -186,17 +180,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="User Control Admin\UC_ADMIN_ADMIN.resx">
-      <DependentUpon>UC_ADMIN_ADMIN.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="User Control Admin\UC_ADMIN_ORDER.resx">
       <DependentUpon>UC_ADMIN_ORDER.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -229,9 +220,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Simple Coffee Cup Logo Template Download on Pngtree.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\logo.png" />

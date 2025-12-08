@@ -72,8 +72,6 @@ namespace BaoCaoCuoiKy
             panel_container.Controls.Add(userControl);
             userControl.BringToFront(); 
         }
-
-
         private void btnExitWindow_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -105,12 +103,6 @@ namespace BaoCaoCuoiKy
         private void btnReport_Click(object sender, EventArgs e)
         {
             UC_ADMIN_STATIS uc = new UC_ADMIN_STATIS();
-            addUserControl(uc);
-        }
-
-        private void btnManageAdmin_Click(object sender, EventArgs e)
-        {
-            UC_ADMIN_ADMIN uc = new UC_ADMIN_ADMIN();
             addUserControl(uc);
         }
     }

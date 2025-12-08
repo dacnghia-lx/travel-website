@@ -29,7 +29,6 @@ namespace BaoCaoCuoiKy
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main_Admin));
             this.panel_container = new System.Windows.Forms.Panel();
             this.panelSidebar = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnManageAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnReport = new Guna.UI2.WinForms.Guna2Button();
             this.btnManageInvoice = new Guna.UI2.WinForms.Guna2Button();
@@ -75,7 +74,6 @@ namespace BaoCaoCuoiKy
             this.panelSidebar.BorderRadius = 10;
             this.panelSidebar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.panelSidebar.BorderThickness = 1;
-            this.panelSidebar.Controls.Add(this.btnManageAdmin);
             this.panelSidebar.Controls.Add(this.label3);
             this.panelSidebar.Controls.Add(this.btnReport);
             this.panelSidebar.Controls.Add(this.btnManageInvoice);
@@ -90,31 +88,6 @@ namespace BaoCaoCuoiKy
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(240, 969);
             this.panelSidebar.TabIndex = 9;
-            // 
-            // btnManageAdmin
-            // 
-            this.btnManageAdmin.Animated = true;
-            this.btnManageAdmin.BorderColor = System.Drawing.Color.Transparent;
-            this.btnManageAdmin.BorderRadius = 10;
-            this.btnManageAdmin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageAdmin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnManageAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnManageAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnManageAdmin.FillColor = System.Drawing.Color.Transparent;
-            this.btnManageAdmin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnManageAdmin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageAdmin.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnManageAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnManageAdmin.Image")));
-            this.btnManageAdmin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageAdmin.Location = new System.Drawing.Point(0, 565);
-            this.btnManageAdmin.Name = "btnManageAdmin";
-            this.btnManageAdmin.Size = new System.Drawing.Size(234, 68);
-            this.btnManageAdmin.TabIndex = 20;
-            this.btnManageAdmin.Text = "Quản lý Admin";
-            this.btnManageAdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageAdmin.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnManageAdmin.Click += new System.EventHandler(this.btnManageAdmin_Click);
             // 
             // label3
             // 
@@ -140,7 +113,7 @@ namespace BaoCaoCuoiKy
             this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
             this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
             this.btnReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnReport.Location = new System.Drawing.Point(-1, 310);
@@ -165,10 +138,10 @@ namespace BaoCaoCuoiKy
             this.btnManageInvoice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageInvoice.ForeColor = System.Drawing.Color.White;
             this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageInvoice.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnManageInvoice.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnManageInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btnManageInvoice.Image")));
             this.btnManageInvoice.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnManageInvoice.Location = new System.Drawing.Point(0, 629);
+            this.btnManageInvoice.Location = new System.Drawing.Point(-2, 561);
             this.btnManageInvoice.Name = "btnManageInvoice";
             this.btnManageInvoice.Size = new System.Drawing.Size(234, 68);
             this.btnManageInvoice.TabIndex = 17;
@@ -190,7 +163,7 @@ namespace BaoCaoCuoiKy
             this.btnManageStaff.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageStaff.ForeColor = System.Drawing.Color.White;
             this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnManageStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnManageStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStaff.Image")));
             this.btnManageStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnManageStaff.Location = new System.Drawing.Point(-2, 500);
@@ -263,7 +236,7 @@ namespace BaoCaoCuoiKy
             this.btnManageMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageMenu.ForeColor = System.Drawing.Color.White;
             this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnManageMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnManageMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnManageMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnManageMenu.Image")));
             this.btnManageMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnManageMenu.Location = new System.Drawing.Point(0, 436);
@@ -458,6 +431,5 @@ namespace BaoCaoCuoiKy
         private Guna.UI2.WinForms.Guna2Button btnReport;
         private Guna.UI2.WinForms.Guna2Button btnManageInvoice;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button btnManageAdmin;
     }
 }

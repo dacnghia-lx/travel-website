@@ -267,7 +267,7 @@ namespace CoffeeShopManagement.User_Control_Staff
                  MaMon = row["Mã món"].ToString();
                  DonGia = Convert.ToInt32(row["Đơn giá"]);
                  SoLuong = Convert.ToInt32(row["Số lượng"]);
-                detailOrder.addDetailOrder(MaHD, MaMon, SoLuong, DonGia);
+                 detailOrder.addDetailOrder(MaHD, MaMon, SoLuong, DonGia);
             }
             global.notify("Tạo hóa đơn thành công");
         }
