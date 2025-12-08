@@ -41,7 +41,7 @@ The Coffee Shop Management project is a comprehensive software solution designed
 
 ## Screenshots 📸
 ![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/225c7a6a-5c14-42ba-a81a-03c026679704)
-![image]([https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/b68788d9-3d7e-49c8-86b8-4ac04a1b4a3b](https://res.cloudinary.com/dleifiagc/image/upload/v1765223318/nthls4dwtmlwso9wupg4.png))
+![image](https://res.cloudinary.com/dleifiagc/image/upload/v1765223318/nthls4dwtmlwso9wupg4.png)
 ![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/11f8377f-977d-41f1-b577-5153bb4a0539)
 ![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/48b2641d-3ac7-42d3-8089-7b3cb6d5c17a)
 ![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/2f73850c-5dab-47c3-bf38-837046d3d083)
