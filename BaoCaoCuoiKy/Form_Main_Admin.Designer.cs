@@ -112,7 +112,7 @@ namespace BaoCaoCuoiKy
             this.btnReport.FillColor = System.Drawing.Color.Transparent;
             this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
             this.btnReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -137,7 +137,7 @@ namespace BaoCaoCuoiKy
             this.btnManageInvoice.FillColor = System.Drawing.Color.Transparent;
             this.btnManageInvoice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnManageInvoice.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnManageInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btnManageInvoice.Image")));
             this.btnManageInvoice.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -162,7 +162,7 @@ namespace BaoCaoCuoiKy
             this.btnManageStaff.FillColor = System.Drawing.Color.Transparent;
             this.btnManageStaff.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageStaff.ForeColor = System.Drawing.Color.White;
-            this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnManageStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnManageStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStaff.Image")));
             this.btnManageStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -235,7 +235,7 @@ namespace BaoCaoCuoiKy
             this.btnManageMenu.FillColor = System.Drawing.Color.Transparent;
             this.btnManageMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageMenu.ForeColor = System.Drawing.Color.White;
-            this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnManageMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnManageMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnManageMenu.Image")));
             this.btnManageMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;

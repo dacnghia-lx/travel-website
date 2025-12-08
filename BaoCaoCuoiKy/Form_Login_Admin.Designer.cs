@@ -59,7 +59,6 @@
             this.lblUsername.Size = new System.Drawing.Size(88, 18);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Mã Quản Lý";
-            this.lblUsername.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblPassword
             // 
@@ -72,7 +71,6 @@
             this.lblPassword.Size = new System.Drawing.Size(69, 18);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Mật khẩu";
-            this.lblPassword.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblTitle
             // 
@@ -196,7 +194,6 @@
             this.textBoxUsername.Size = new System.Drawing.Size(470, 51);
             this.textBoxUsername.TabIndex = 6;
             this.textBoxUsername.TextOffset = new System.Drawing.Point(6, 0);
-            this.textBoxUsername.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // lblLogin
             // 
@@ -208,7 +205,6 @@
             this.lblLogin.Size = new System.Drawing.Size(155, 31);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Đăng nhập";
-            this.lblLogin.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnCancel
             // 
