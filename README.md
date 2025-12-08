@@ -40,7 +40,8 @@ The Coffee Shop Management project is a comprehensive software solution designed
 - **Integrated Development Environment (IDE):** Visual Studio 2022
 
 ## Screenshots 📸
-<img width="1901" height="1063" alt="image" src="https://github.com/user-attachments/assets/ddab454e-a597-4792-83b3-3451390e4fd0" />
+<img width="1906" height="1065" alt="image" src="https://github.com/user-attachments/assets/e54950df-5e1d-418d-ba63-0c25507a6f16" />
+
 ![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/b68788d9-3d7e-49c8-86b8-4ac04a1b4a3b)
 ![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/11f8377f-977d-41f1-b577-5153bb4a0539)
 ![image](https://github.com/hoigreen/project-coffee-shop-management-ado-dotnet/assets/88929110/48b2641d-3ac7-42d3-8089-7b3cb6d5c17a)
