@@ -77,5 +77,29 @@ namespace BaoCaoCuoiKy
                     connection.Close();
             }
         }
+
+        public void BackupDatabase(string backupPath)
+        {
+            try
+            {
+                connection.Open();
+                string backupCommand = $"BACKUP DATABASE [QL_CAFE] TO DISK = @backupPath WITH INIT";
+                using (SqlCommand command = new SqlCommand(backupCommand, connection))
+                {
+                    command.Parameters.AddWithValue("@backupPath", backupPath);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Backup Database thành công.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                    connection.Close();
+            }
+        }
     }
 }

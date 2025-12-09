@@ -62,6 +62,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pieChartBestItems = new LiveCharts.WinForms.PieChart();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnPrintStaff = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2GradientPanel4.SuspendLayout();
@@ -458,11 +459,31 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Top 5 món bán chạy";
             // 
+            // btnPrintStaff
+            // 
+            this.btnPrintStaff.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrintStaff.BorderRadius = 12;
+            this.btnPrintStaff.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrintStaff.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrintStaff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPrintStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPrintStaff.FillColor = System.Drawing.SystemColors.HotTrack;
+            this.btnPrintStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintStaff.ForeColor = System.Drawing.Color.White;
+            this.btnPrintStaff.Location = new System.Drawing.Point(1504, 52);
+            this.btnPrintStaff.Name = "btnPrintStaff";
+            this.btnPrintStaff.Size = new System.Drawing.Size(153, 54);
+            this.btnPrintStaff.TabIndex = 47;
+            this.btnPrintStaff.Text = "Backup Database";
+            this.btnPrintStaff.UseTransparentBackground = true;
+            this.btnPrintStaff.Click += new System.EventHandler(this.btnPrintStaff_Click);
+            // 
             // UC_ADMIN_STATIS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Controls.Add(this.btnPrintStaff);
             this.Controls.Add(this.panel_Piechart);
             this.Controls.Add(this.panelChartLine);
             this.Controls.Add(this.guna2GradientPanel4);
@@ -530,5 +551,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_topSaler2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_topSaler1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button btnPrintStaff;
     }
 }

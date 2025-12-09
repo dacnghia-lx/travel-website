@@ -23,6 +23,7 @@ namespace BaoCaoCuoiKy.User_Control_Admin
         {
             InitializeComponent();
         }
+        private XL_ADMIN admin = new XL_ADMIN();
         private XL_STAFF staff = new XL_STAFF();
         private XL_MENU menu = new XL_MENU();
         private XL_ORDER order = new XL_ORDER();
@@ -115,6 +116,11 @@ namespace BaoCaoCuoiKy.User_Control_Admin
 
             pieChartBestItems.Series = seriesCollection;
             panel_Piechart.Controls.Add(pieChartBestItems);
+        }
+
+        private void btnPrintStaff_Click(object sender, EventArgs e)
+        {
+            admin.BackupDatabase("D:\\CoffeeShopDB.bak");
         }
     }
 }

@@ -31,10 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dg_menu = new System.Windows.Forms.DataGridView();
-            this.col_ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,6 +49,11 @@
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.comboBoxSortByType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.col_ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_tt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg_menu)).BeginInit();
             this.panelControl.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +76,8 @@
             this.col_ma,
             this.col_ten,
             this.col_gia,
-            this.col_loai});
+            this.col_loai,
+            this.col_tt});
             this.dg_menu.GridColor = System.Drawing.Color.Black;
             this.dg_menu.Location = new System.Drawing.Point(28, 498);
             this.dg_menu.Margin = new System.Windows.Forms.Padding(4);
@@ -87,29 +89,6 @@
             this.dg_menu.Size = new System.Drawing.Size(1626, 474);
             this.dg_menu.TabIndex = 0;
             this.dg_menu.SelectionChanged += new System.EventHandler(this.DgMenu_SelectionChanged);
-            // 
-            // col_ma
-            // 
-            this.col_ma.HeaderText = "Mã Món";
-            this.col_ma.Name = "col_ma";
-            // 
-            // col_ten
-            // 
-            this.col_ten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.col_ten.HeaderText = "Tên";
-            this.col_ten.Name = "col_ten";
-            // 
-            // col_gia
-            // 
-            this.col_gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.col_gia.HeaderText = "Đơn giá";
-            this.col_gia.Name = "col_gia";
-            // 
-            // col_loai
-            // 
-            this.col_loai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.col_loai.HeaderText = "Danh mục";
-            this.col_loai.Name = "col_loai";
             // 
             // label1
             // 
@@ -414,6 +393,35 @@
             this.comboBoxSortByType.TabIndex = 38;
             this.comboBoxSortByType.SelectedIndexChanged += new System.EventHandler(this.comboBoxSortByType_SelectedIndexChanged);
             // 
+            // col_ma
+            // 
+            this.col_ma.HeaderText = "Mã Món";
+            this.col_ma.Name = "col_ma";
+            // 
+            // col_ten
+            // 
+            this.col_ten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.col_ten.HeaderText = "Tên";
+            this.col_ten.Name = "col_ten";
+            // 
+            // col_gia
+            // 
+            this.col_gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.col_gia.HeaderText = "Đơn giá";
+            this.col_gia.Name = "col_gia";
+            // 
+            // col_loai
+            // 
+            this.col_loai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.col_loai.HeaderText = "Danh mục";
+            this.col_loai.Name = "col_loai";
+            // 
+            // col_tt
+            // 
+            this.col_tt.HeaderText = "Trạng Thái";
+            this.col_tt.Name = "col_tt";
+            this.col_tt.Visible = false;
+            // 
             // UC_ADMIN_MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -464,5 +472,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_ten;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_loai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_tt;
     }
 }

@@ -84,19 +84,19 @@ namespace BaoCaoCuoiKy
             this.panelSidebar.Controls.Add(this.lblMethodSidebar);
             this.panelSidebar.Controls.Add(this.btnManageMenu);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSidebar.Location = new System.Drawing.Point(0, 92);
+            this.panelSidebar.Location = new System.Drawing.Point(0, 0);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(240, 969);
+            this.panelSidebar.Size = new System.Drawing.Size(240, 1061);
             this.panelSidebar.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(12, 284);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
+            this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 21;
             this.label3.Text = "Trang chủ";
             // 
@@ -111,8 +111,8 @@ namespace BaoCaoCuoiKy
             this.btnReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReport.FillColor = System.Drawing.Color.Transparent;
             this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnReport.ForeColor = System.Drawing.Color.DimGray;
+            this.btnReport.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnReport.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
             this.btnReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -136,8 +136,8 @@ namespace BaoCaoCuoiKy
             this.btnManageInvoice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManageInvoice.FillColor = System.Drawing.Color.Transparent;
             this.btnManageInvoice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnManageInvoice.ForeColor = System.Drawing.Color.DimGray;
+            this.btnManageInvoice.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnManageInvoice.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnManageInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btnManageInvoice.Image")));
             this.btnManageInvoice.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -161,8 +161,8 @@ namespace BaoCaoCuoiKy
             this.btnManageStaff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManageStaff.FillColor = System.Drawing.Color.Transparent;
             this.btnManageStaff.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageStaff.ForeColor = System.Drawing.Color.White;
-            this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnManageStaff.ForeColor = System.Drawing.Color.DimGray;
+            this.btnManageStaff.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnManageStaff.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnManageStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnManageStaff.Image")));
             this.btnManageStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -215,11 +215,11 @@ namespace BaoCaoCuoiKy
             // lblMethodSidebar
             // 
             this.lblMethodSidebar.AutoSize = true;
-            this.lblMethodSidebar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblMethodSidebar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblMethodSidebar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMethodSidebar.ForeColor = System.Drawing.Color.Teal;
             this.lblMethodSidebar.Location = new System.Drawing.Point(12, 401);
             this.lblMethodSidebar.Name = "lblMethodSidebar";
-            this.lblMethodSidebar.Size = new System.Drawing.Size(112, 24);
+            this.lblMethodSidebar.Size = new System.Drawing.Size(108, 25);
             this.lblMethodSidebar.TabIndex = 22;
             this.lblMethodSidebar.Text = "Chức năng";
             // 
@@ -234,8 +234,8 @@ namespace BaoCaoCuoiKy
             this.btnManageMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnManageMenu.FillColor = System.Drawing.Color.Transparent;
             this.btnManageMenu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageMenu.ForeColor = System.Drawing.Color.White;
-            this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnManageMenu.ForeColor = System.Drawing.Color.DimGray;
+            this.btnManageMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(191)))), ((int)(((byte)(219)))));
             this.btnManageMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.btnManageMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnManageMenu.Image")));
             this.btnManageMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -257,9 +257,9 @@ namespace BaoCaoCuoiKy
             this.panelHeader.Controls.Add(this.btnExitWindow);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Location = new System.Drawing.Point(240, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1920, 92);
+            this.panelHeader.Size = new System.Drawing.Size(1680, 92);
             this.panelHeader.TabIndex = 8;
             // 
             // guna2PictureBox2
@@ -270,7 +270,7 @@ namespace BaoCaoCuoiKy
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(-3, -2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(147, 81);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(153, 92);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
@@ -292,7 +292,7 @@ namespace BaoCaoCuoiKy
             this.lb_name_admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_name_admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb_name_admin.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lb_name_admin.Location = new System.Drawing.Point(1536, 25);
+            this.lb_name_admin.Location = new System.Drawing.Point(1296, 25);
             this.lb_name_admin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_name_admin.Name = "lb_name_admin";
             this.lb_name_admin.Size = new System.Drawing.Size(222, 20);
@@ -318,7 +318,7 @@ namespace BaoCaoCuoiKy
             this.btnExitWindow.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExitWindow.ImageSize = new System.Drawing.Size(40, 40);
             this.btnExitWindow.ImeMode = System.Windows.Forms.ImeMode.HangulFull;
-            this.btnExitWindow.Location = new System.Drawing.Point(1766, 14);
+            this.btnExitWindow.Location = new System.Drawing.Point(1526, 14);
             this.btnExitWindow.Margin = new System.Windows.Forms.Padding(4);
             this.btnExitWindow.Name = "btnExitWindow";
             this.btnExitWindow.Size = new System.Drawing.Size(139, 41);
@@ -387,8 +387,8 @@ namespace BaoCaoCuoiKy
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1920, 1061);
             this.Controls.Add(this.panel_container);
-            this.Controls.Add(this.panelSidebar);
             this.Controls.Add(this.panelHeader);
+            this.Controls.Add(this.panelSidebar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);

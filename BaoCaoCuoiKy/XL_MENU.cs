@@ -68,7 +68,8 @@ namespace BaoCaoCuoiKy
                     "M.Gia, " +
                     "D.ten AS DanhMuc " +
                     "FROM MENU M " +
-                    "JOIN DANHMUC D ON M.DanhMuc = D.id;";
+                    "JOIN DANHMUC D ON M.DanhMuc = D.id " +
+                    "WHERE M.TrangThai = 1;";
 
                 connection.Open();
 
@@ -102,7 +103,7 @@ namespace BaoCaoCuoiKy
                     "D.ten AS DanhMuc " +
                     "FROM MENU M " +
                     "JOIN DANHMUC D ON M.DanhMuc = D.id " +
-                    "WHERE M.DanhMuc = @id";
+                    "WHERE M.DanhMuc = @id and M.TRANGTHAI = 1";
 
                 connection.Open();
 
@@ -134,7 +135,7 @@ namespace BaoCaoCuoiKy
             try
             {
                 connection.Open();
-                string selectCommand = "SELECT MaMon FROM MENU ORDER BY MaMon DESC OFFSET 0 ROWS FETCH FIRST 1 ROW ONLY;";
+                string selectCommand = "SELECT MaMon FROM MENU WHERE TRANGTHAI = 1 ORDER BY MaMon DESC OFFSET 0 ROWS FETCH FIRST 1 ROW ONLY;";
 
                 using (command = new SqlCommand(selectCommand, connection))
                 {
@@ -186,7 +187,7 @@ namespace BaoCaoCuoiKy
             try
             {
                 connection.Open();
-                string selectCommand = "SELECT COUNT(*) FROM MENU";
+                string selectCommand = "SELECT COUNT(*) FROM MENU WHERE TRANGTHAI = 1";
 
                 using (command = new SqlCommand(selectCommand, connection))
                 {
@@ -267,7 +268,7 @@ namespace BaoCaoCuoiKy
             try
             {
                 connection.Open();
-                string deleteCommand = "DELETE FROM MENU WHERE MaMon = @MaMon";
+                string deleteCommand = "UPDATE MENU SET TrangThai = 0 WHERE MaMon = @MaMon";
 
                 using (command = new SqlCommand(deleteCommand, connection))
                 {
