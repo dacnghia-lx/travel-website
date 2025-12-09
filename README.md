@@ -41,6 +41,7 @@ The Coffee Shop Management project is a comprehensive software solution designed
 
 ## Screenshots 📸
 <img width="1906" height="1065" alt="image" src="https://github.com/user-attachments/assets/e54950df-5e1d-418d-ba63-0c25507a6f16" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/126909f0-fc83-45a5-b130-140edf3d9135" />
 <img width="1908" height="1064" alt="image" src="https://github.com/user-attachments/assets/a18ab7be-dd2c-4a58-bb6c-725ea95ab895" />
 <img width="1916" height="1068" alt="image" src="https://github.com/user-attachments/assets/3fade488-995a-43f4-95d9-e292125b8f4d" />
 <img width="1900" height="1068" alt="image" src="https://github.com/user-attachments/assets/898111fa-a268-4bf4-93ed-b95e736f0169" />
