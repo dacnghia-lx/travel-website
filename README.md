@@ -92,8 +92,5 @@ Please make sure to update tests as appropriate.
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## About our team 🤝:
-1.Backend Developer:
 - Lê Hải Nam
-
-2.Frontend Developer
 - Nguyễn Đắc Tuấn Nghĩa
